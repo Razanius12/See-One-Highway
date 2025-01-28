@@ -3076,7 +3076,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="109527565227442" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="109527565227442" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -3097,7 +3097,7 @@
                                         <action id="-16" name="Set opacity" sid="253519419911181" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="631703867947721" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="631703867947721" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -3152,7 +3152,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="365073252935900" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="365073252935900" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -3177,7 +3177,7 @@
                                         <action id="-16" name="Set opacity" sid="401194107133444" type="VHSGothicFont">
                                             <param id="0" name="Opacity">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="868588297192080" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="868588297192080" type="BlackBG">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
                                     </actions>
@@ -3260,7 +3260,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="504182411881345" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="504182411881345" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -3281,7 +3281,7 @@
                                         <action id="-16" name="Set opacity" sid="519844591304838" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="553882904784292" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="553882904784292" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -3336,7 +3336,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="106973328722951" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="106973328722951" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -3361,7 +3361,7 @@
                                         <action id="-16" name="Set opacity" sid="245542957762161" type="VHSGothicFont">
                                             <param id="0" name="Opacity">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="655247099761360" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="655247099761360" type="BlackBG">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
                                     </actions>
@@ -3444,7 +3444,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="520445294616368" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="520445294616368" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -3465,7 +3465,7 @@
                                         <action id="-16" name="Set opacity" sid="527306725683245" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="441053071086555" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="441053071086555" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -3520,7 +3520,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="372607709729914" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="372607709729914" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -3545,7 +3545,7 @@
                                         <action id="-16" name="Set opacity" sid="912414318568204" type="VHSGothicFont">
                                             <param id="0" name="Opacity">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="488426654767219" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="488426654767219" type="BlackBG">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
                                     </actions>
@@ -3636,7 +3636,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="838537179152818" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="838537179152818" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -3657,7 +3657,7 @@
                                         <action id="-16" name="Set opacity" sid="464858432047529" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="582530806490381" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="582530806490381" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -3712,7 +3712,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="970910803295961" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="970910803295961" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -3737,7 +3737,7 @@
                                         <action id="-16" name="Set opacity" sid="287015480276479" type="VHSGothicFont">
                                             <param id="0" name="Opacity">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="936016438310979" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="936016438310979" type="BlackBG">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
                                     </actions>
@@ -3820,7 +3820,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="531937278817914" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="531937278817914" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -3841,7 +3841,7 @@
                                         <action id="-16" name="Set opacity" sid="547315689890679" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="518408574577403" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="518408574577403" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -3896,7 +3896,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="741613141114203" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="741613141114203" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -3921,7 +3921,7 @@
                                         <action id="-16" name="Set opacity" sid="561334202763779" type="VHSGothicFont">
                                             <param id="0" name="Opacity">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="635612719072566" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="635612719072566" type="BlackBG">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
                                     </actions>
@@ -4000,7 +4000,7 @@
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                                 </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="460926522988926" type="BackgroundBlack">
+                                                <condition id="-7" name="Compare instance variable" sid="460926522988926" type="BlackBG">
                                                     <param id="0" name="Instance variable">Name</param>
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -4021,7 +4021,7 @@
                                                 <action id="-16" name="Set opacity" sid="288239178699623" type="VHSGothicFont">
                                                     <param id="0" name="Opacity">100</param>
                                                 </action>
-                                                <action id="-15" name="Set visible" sid="245068606010494" type="BackgroundBlack">
+                                                <action id="-15" name="Set visible" sid="245068606010494" type="BlackBG">
                                                     <param id="0" name="Visibility">1</param>
                                                 </action>
                                             </actions>
@@ -4043,7 +4043,7 @@
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                                 </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="712956965269807" type="BackgroundBlack">
+                                                <condition id="-7" name="Compare instance variable" sid="712956965269807" type="BlackBG">
                                                     <param id="0" name="Instance variable">Name</param>
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -4068,7 +4068,7 @@
                                                 <action id="-16" name="Set opacity" sid="218636676832949" type="VHSGothicFont">
                                                     <param id="0" name="Opacity">0</param>
                                                 </action>
-                                                <action id="-15" name="Set visible" sid="841594166672084" type="BackgroundBlack">
+                                                <action id="-15" name="Set visible" sid="841594166672084" type="BlackBG">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
                                                 <action id="-12" name="Set group active" sid="839700905563251" type="System">
@@ -4161,7 +4161,7 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="-7" name="Compare instance variable" sid="112731405347225" type="BackgroundBlack">
+                                <condition id="-7" name="Compare instance variable" sid="112731405347225" type="BlackBG">
                                     <param id="0" name="Instance variable">Name</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -4176,7 +4176,7 @@
                                 <action id="-16" name="Set opacity" sid="801018074210080" type="VHSGothicFont">
                                     <param id="0" name="Opacity">0</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="729523026375798" type="BackgroundBlack">
+                                <action id="-15" name="Set visible" sid="729523026375798" type="BlackBG">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
@@ -4193,7 +4193,7 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="-7" name="Compare instance variable" sid="505712248619330" type="BackgroundBlack">
+                                <condition id="-7" name="Compare instance variable" sid="505712248619330" type="BlackBG">
                                     <param id="0" name="Instance variable">Name</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -4208,7 +4208,7 @@
                                 <action id="-16" name="Set opacity" sid="572530418810421" type="VHSGothicFont">
                                     <param id="0" name="Opacity">0</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="275004649213415" type="BackgroundBlack">
+                                <action id="-15" name="Set visible" sid="275004649213415" type="BlackBG">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
@@ -4289,7 +4289,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="562128724907782" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="562128724907782" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -4310,7 +4310,7 @@
                                         <action id="-16" name="Set opacity" sid="169203326333924" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="231583107750970" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="231583107750970" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -4365,7 +4365,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="987346250355177" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="987346250355177" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -4467,7 +4467,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="178115799703121" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="178115799703121" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -4488,7 +4488,7 @@
                                         <action id="-16" name="Set opacity" sid="863181106577475" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="699865792251215" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="699865792251215" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -4543,7 +4543,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="384861580025652" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="384861580025652" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -4645,7 +4645,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="561837206329998" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="561837206329998" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -4666,7 +4666,7 @@
                                         <action id="-16" name="Set opacity" sid="852682956511230" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="472081356602407" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="472081356602407" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -4721,7 +4721,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="336418496012683" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="336418496012683" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -4823,7 +4823,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="231563848580735" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="231563848580735" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -4844,7 +4844,7 @@
                                         <action id="-16" name="Set opacity" sid="381364948528608" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="862798121862958" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="862798121862958" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -4899,7 +4899,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="218412545974781" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="218412545974781" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -5001,7 +5001,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="714812176492748" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="714812176492748" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -5022,7 +5022,7 @@
                                         <action id="-16" name="Set opacity" sid="954386854466780" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="596232030222294" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="596232030222294" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -5077,7 +5077,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="871918249076472" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="871918249076472" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -5179,7 +5179,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="351613077789641" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="351613077789641" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -5200,7 +5200,7 @@
                                         <action id="-16" name="Set opacity" sid="996626553682870" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="718908916577774" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="718908916577774" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -5255,7 +5255,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="149588060669932" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="149588060669932" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -5406,7 +5406,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="348131787056918" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="348131787056918" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -5427,7 +5427,7 @@
                                         <action id="-16" name="Set opacity" sid="446051990508052" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="915135652378131" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="915135652378131" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -5449,7 +5449,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="225776908649620" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="225776908649620" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -5474,7 +5474,7 @@
                                         <action id="-16" name="Set opacity" sid="224339183073135" type="VHSGothicFont">
                                             <param id="0" name="Opacity">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="261695905826617" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="261695905826617" type="BlackBG">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
                                         <action id="-12" name="Set group active" sid="276839721306736" type="System">
@@ -5599,7 +5599,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="410128692878068" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="410128692878068" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -5620,7 +5620,7 @@
                                         <action id="-16" name="Set opacity" sid="849592490048518" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="213911704544854" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="213911704544854" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -5675,7 +5675,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="429937359473443" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="429937359473443" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -5823,7 +5823,7 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="-7" name="Compare instance variable" sid="844900822799746" type="BackgroundBlack">
+                                <condition id="-7" name="Compare instance variable" sid="844900822799746" type="BlackBG">
                                     <param id="0" name="Instance variable">Name</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -5838,7 +5838,7 @@
                                 <action id="-16" name="Set opacity" sid="789252110372195" type="VHSGothicFont">
                                     <param id="0" name="Opacity">0</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="763154261493510" type="BackgroundBlack">
+                                <action id="-15" name="Set visible" sid="763154261493510" type="BlackBG">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
@@ -5855,7 +5855,7 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="-7" name="Compare instance variable" sid="218848211464514" type="BackgroundBlack">
+                                <condition id="-7" name="Compare instance variable" sid="218848211464514" type="BlackBG">
                                     <param id="0" name="Instance variable">Name</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -5870,7 +5870,7 @@
                                 <action id="-16" name="Set opacity" sid="258672249488449" type="VHSGothicFont">
                                     <param id="0" name="Opacity">0</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="866324037073203" type="BackgroundBlack">
+                                <action id="-15" name="Set visible" sid="866324037073203" type="BlackBG">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
@@ -5951,7 +5951,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="496165732104104" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="496165732104104" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -5972,7 +5972,7 @@
                                         <action id="-16" name="Set opacity" sid="792624160273042" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="600058823699112" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="600058823699112" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -6027,7 +6027,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="753167354860259" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="753167354860259" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -6135,7 +6135,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="525426706968005" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="525426706968005" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -6156,7 +6156,7 @@
                                         <action id="-16" name="Set opacity" sid="908954688240202" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="315960323603773" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="315960323603773" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -6211,7 +6211,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="287580022688012" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="287580022688012" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -6319,7 +6319,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="114122724433899" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="114122724433899" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -6340,7 +6340,7 @@
                                         <action id="-16" name="Set opacity" sid="841689474382953" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="572107549733518" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="572107549733518" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -6395,7 +6395,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="813557235984965" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="813557235984965" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -6503,7 +6503,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="895137732546960" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="895137732546960" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -6524,7 +6524,7 @@
                                         <action id="-16" name="Set opacity" sid="273556304070189" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="636501816943897" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="636501816943897" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -6579,7 +6579,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="882874270488448" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="882874270488448" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -6687,7 +6687,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="508878539965181" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="508878539965181" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -6708,7 +6708,7 @@
                                         <action id="-16" name="Set opacity" sid="966652176030108" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="461772257950634" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="461772257950634" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -6792,7 +6792,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="353990134077573" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="353990134077573" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -6956,7 +6956,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="898173741354866" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="898173741354866" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -6977,7 +6977,7 @@
                                         <action id="-16" name="Set opacity" sid="424972368812010" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="394014534428740" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="394014534428740" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -7061,7 +7061,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="398290017884437" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="398290017884437" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -7199,7 +7199,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="982123420846004" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="982123420846004" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -7220,7 +7220,7 @@
                                         <action id="-16" name="Set opacity" sid="497024536524811" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="856518649215692" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="856518649215692" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -7304,7 +7304,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="275278516614864" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="275278516614864" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -7433,7 +7433,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="441440002532693" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="441440002532693" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
@@ -7454,7 +7454,7 @@
                                         <action id="-16" name="Set opacity" sid="682606484005613" type="VHSGothicFont">
                                             <param id="0" name="Opacity">100</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="623795116177771" type="BackgroundBlack">
+                                        <action id="-15" name="Set visible" sid="623795116177771" type="BlackBG">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
@@ -7538,7 +7538,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="122496413684851" type="BackgroundBlack">
+                                        <condition id="-7" name="Compare instance variable" sid="122496413684851" type="BlackBG">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>

@@ -136,7 +136,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="BackgroundBlack" sid="422925692823024">
+            <object-type name="BlackBG" sid="422925692823024">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="Name" sid="833496817742129" type="string" />

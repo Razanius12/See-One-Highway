@@ -12,11 +12,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="1">Menu</layout>
         <layout order="3">Credits</layout>
-        <layout order="6">World Map</layout>
-        <layout active="1" order="5">C1 Loop</layout>
+        <layout order="5">Parking Lot</layout>
+        <layout active="1" order="7">Stage 1 Story</layout>
         <event-sheet order="0">Global Event</event-sheet>
-        <event-sheet order="4">Game Event</event-sheet>
         <event-sheet order="2">Menu Event</event-sheet>
+        <event-sheet order="4">Game Event</event-sheet>
+        <event-sheet order="6">Story Event</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -45,7 +46,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/MapBG/" />
         <folder expanded="1" path="animation-folder/MenuUIBG/" />
         <folder expanded="1" path="animation-folder/GarageBG/" />
-        <folder expanded="1" path="animation-folder/BackgroundBlack/" />
+        <folder expanded="1" path="animation-folder/BlackBG/" />
         <folder expanded="1" path="animation-folder/DaikokuPABG/" />
         <folder expanded="1" path="animation-folder/C1LoopBG/" />
         <folder expanded="1" path="animation-folder/C1LoopThumb/" />

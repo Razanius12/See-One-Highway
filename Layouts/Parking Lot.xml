@@ -925,7 +925,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BackgroundBlack" uid="453">
+                <instance type="BlackBG" uid="453">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -4929,7 +4929,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BackgroundBlack" uid="466">
+                <instance type="BlackBG" uid="466">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -5006,7 +5006,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BackgroundBlack" uid="477">
+                <instance type="BlackBG" uid="477">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
