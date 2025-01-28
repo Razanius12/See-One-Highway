@@ -4,5 +4,5 @@
 *.uistate.xml
 
 # Temporary files
-*.capx.backup1*
+*.capx.backup*
 *.capx.autosave*
