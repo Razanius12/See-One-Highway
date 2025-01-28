@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Car Class</name>
+    <events>
+        <event-block sid="982940604077321">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="189907026628143" type="Cars">
+                    <param id="0" name="Instance variable">CurrentGear</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="118312031398858" type="Cars">
+                    <param id="0" name="Instance variable">CurrentGear</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="887280392882876">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="867509841867303" type="Cars">
+                    <param id="0" name="Instance variable">CurrentGear</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="597095755551302" type="Cars">
+                    <param id="0" name="Instance variable">CurrentGear</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="471059981718641" title="RX-8">
+            <sub-events>
+                <event-block sid="667807543603772">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="956459439667138" type="Cars">
+                            <param id="0" name="Animation">&quot;RX8&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Car" id="6" name="Set deceleration" sid="949304511328397" type="Cars">
+                            <param id="0" name="Deceleration">30 * 2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="395753008493665" type="Cars">
+                            <param id="0" name="Instance variable">MinRPM</param>
+                            <param id="1" name="Value">850</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="208617159883015" type="Cars">
+                            <param id="0" name="Instance variable">MaxRPM</param>
+                            <param id="1" name="Value">8250</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="919086630791154" type="Cars">
+                            <param id="0" name="Instance variable">Gear1MaxSpeed</param>
+                            <param id="1" name="Value">60 * 2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="561514606700150" type="Cars">
+                            <param id="0" name="Instance variable">Gear2MaxSpeed</param>
+                            <param id="1" name="Value">96 * 2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="311150787945478" type="Cars">
+                            <param id="0" name="Instance variable">Gear3MaxSpeed</param>
+                            <param id="1" name="Value">132 * 2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="843822309593814" type="Cars">
+                            <param id="0" name="Instance variable">Gear4MaxSpeed</param>
+                            <param id="1" name="Value">166 * 2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="883157442975630" type="Cars">
+                            <param id="0" name="Instance variable">Gear5MaxSpeed</param>
+                            <param id="1" name="Value">202 * 2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="283620794089113" type="Cars">
+                            <param id="0" name="Instance variable">TopSpeed</param>
+                            <param id="1" name="Value">237 * 2</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="253483523235795">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="745384643827533" type="Cars">
+                                    <param id="0" name="Instance variable">CurrentGear</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Car" id="5" name="Set acceleration" sid="896904496605723" type="Cars">
+                                    <param id="0" name="Acceleration">24 * 2</param>
+                                </action>
+                                <action behavior="Car" id="4" name="Set max speed" sid="864407287594736" type="Cars">
+                                    <param id="0" name="Max Speed">Cars.Gear1MaxSpeed</param>
+                                </action>
+                                <action behavior="Car" id="9" name="Set steer speed" sid="312734049156200" type="Cars">
+                                    <param id="0" name="Steer speed">150</param>
+                                </action>
+                                <action behavior="Car" id="10" name="Set drift recover" sid="669849845474388" type="Cars">
+                                    <param id="0" name="Drift recover">90</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="266889156523197" type="Cars">
+                                    <param id="0" name="Instance variable">RPM</param>
+                                    <param id="1" name="Value">Cars.MinRPM + (abs(Cars.Car.Speed) / Cars.Gear1MaxSpeed) * (Cars.MaxRPM - Cars.MinRPM)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="236624850445850">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="842240072152951" type="Cars">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Speed">Cars.Gear1MaxSpeed</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="809653119551849" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="441958948595479">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="964934364051032" type="Cars">
+                                    <param id="0" name="Instance variable">CurrentGear</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Car" id="5" name="Set acceleration" sid="914494301226509" type="Cars">
+                                    <param id="0" name="Acceleration">13 * 2</param>
+                                </action>
+                                <action behavior="Car" id="4" name="Set max speed" sid="251035812202630" type="Cars">
+                                    <param id="0" name="Max Speed">Cars.Gear2MaxSpeed</param>
+                                </action>
+                                <action behavior="Car" id="9" name="Set steer speed" sid="493296491464589" type="Cars">
+                                    <param id="0" name="Steer speed">100</param>
+                                </action>
+                                <action behavior="Car" id="10" name="Set drift recover" sid="216859125347299" type="Cars">
+                                    <param id="0" name="Drift recover">98</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="922975289103944" type="Cars">
+                                    <param id="0" name="Instance variable">RPM</param>
+                                    <param id="1" name="Value">Cars.MinRPM + (abs(Cars.Car.Speed) / Cars.Gear2MaxSpeed) * (Cars.MaxRPM - Cars.MinRPM)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="811497671100060">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="321688028284824" type="Cars">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Speed">Cars.Gear2MaxSpeed</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="108318886833581" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="602306198173401">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="832957760983461" type="Cars">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Speed">Cars.Gear1MaxSpeed - 4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="129154930397664" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="190277434637121">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="506993545248421" type="Cars">
+                                    <param id="0" name="Instance variable">CurrentGear</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Car" id="5" name="Set acceleration" sid="132948418033500" type="Cars">
+                                    <param id="0" name="Acceleration">9 * 2</param>
+                                </action>
+                                <action behavior="Car" id="4" name="Set max speed" sid="254586354892840" type="Cars">
+                                    <param id="0" name="Max Speed">Cars.Gear3MaxSpeed</param>
+                                </action>
+                                <action behavior="Car" id="9" name="Set steer speed" sid="298361534184912" type="Cars">
+                                    <param id="0" name="Steer speed">85</param>
+                                </action>
+                                <action behavior="Car" id="10" name="Set drift recover" sid="900310419362003" type="Cars">
+                                    <param id="0" name="Drift recover">105</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="351576175740917" type="Cars">
+                                    <param id="0" name="Instance variable">RPM</param>
+                                    <param id="1" name="Value">Cars.MinRPM + (abs(Cars.Car.Speed) / Cars.Gear3MaxSpeed) * (Cars.MaxRPM - Cars.MinRPM)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="885370597015550">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="437746034994860" type="Cars">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Speed">Cars.Gear3MaxSpeed</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="434352367707539" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="564076189214197">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="964847724137081" type="Cars">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Speed">Cars.Gear2MaxSpeed - 4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="625473999756374" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="876444125398273">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="957509305408484" type="Cars">
+                                    <param id="0" name="Instance variable">CurrentGear</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Car" id="5" name="Set acceleration" sid="547124681361943" type="Cars">
+                                    <param id="0" name="Acceleration">6 * 2</param>
+                                </action>
+                                <action behavior="Car" id="4" name="Set max speed" sid="915005134215911" type="Cars">
+                                    <param id="0" name="Max Speed">Cars.Gear4MaxSpeed</param>
+                                </action>
+                                <action behavior="Car" id="9" name="Set steer speed" sid="355220950026817" type="Cars">
+                                    <param id="0" name="Steer speed">70</param>
+                                </action>
+                                <action behavior="Car" id="10" name="Set drift recover" sid="882752563450408" type="Cars">
+                                    <param id="0" name="Drift recover">130</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="585526018472078" type="Cars">
+                                    <param id="0" name="Instance variable">RPM</param>
+                                    <param id="1" name="Value">Cars.MinRPM + (abs(Cars.Car.Speed) / Cars.Gear4MaxSpeed) * (Cars.MaxRPM - Cars.MinRPM)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="734065283330598">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="234996442207505" type="Cars">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Speed">Cars.Gear4MaxSpeed</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="617946645989107" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="736127692469650">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="986626305181353" type="Cars">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Speed">Cars.Gear3MaxSpeed - 4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="756433268775762" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="320729719444591">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="853680512842886" type="Cars">
+                                    <param id="0" name="Instance variable">CurrentGear</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Car" id="5" name="Set acceleration" sid="487446475540849" type="Cars">
+                                    <param id="0" name="Acceleration">3.5 * 2</param>
+                                </action>
+                                <action behavior="Car" id="4" name="Set max speed" sid="335420246913994" type="Cars">
+                                    <param id="0" name="Max Speed">Cars.Gear5MaxSpeed</param>
+                                </action>
+                                <action behavior="Car" id="9" name="Set steer speed" sid="898048275485362" type="Cars">
+                                    <param id="0" name="Steer speed">60</param>
+                                </action>
+                                <action behavior="Car" id="10" name="Set drift recover" sid="832678326610382" type="Cars">
+                                    <param id="0" name="Drift recover">170</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="508704574359181" type="Cars">
+                                    <param id="0" name="Instance variable">RPM</param>
+                                    <param id="1" name="Value">Cars.MinRPM + (abs(Cars.Car.Speed) / Cars.Gear5MaxSpeed) * (Cars.MaxRPM - Cars.MinRPM)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="969058712315017">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="749114706050657" type="Cars">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Speed">Cars.Gear5MaxSpeed</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="580051068433933" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="286741218217741">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="616183847969264" type="Cars">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Speed">Cars.Gear4MaxSpeed - 4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="536303337928897" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="600993381835493">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="399201931138941" type="Cars">
+                                    <param id="0" name="Instance variable">CurrentGear</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Car" id="5" name="Set acceleration" sid="876092988038673" type="Cars">
+                                    <param id="0" name="Acceleration">1 * 2</param>
+                                </action>
+                                <action behavior="Car" id="4" name="Set max speed" sid="647345866958094" type="Cars">
+                                    <param id="0" name="Max Speed">Cars.TopSpeed</param>
+                                </action>
+                                <action behavior="Car" id="9" name="Set steer speed" sid="829380035001062" type="Cars">
+                                    <param id="0" name="Steer speed">50</param>
+                                </action>
+                                <action behavior="Car" id="10" name="Set drift recover" sid="334514689260583" type="Cars">
+                                    <param id="0" name="Drift recover">210</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="485570095849625" type="Cars">
+                                    <param id="0" name="Instance variable">RPM</param>
+                                    <param id="1" name="Value">Cars.MinRPM + (abs(Cars.Car.Speed) / Cars.TopSpeed) * (Cars.MaxRPM - Cars.MinRPM)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="423621716888409">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="748624117821599" type="Cars">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Speed">Cars.Gear5MaxSpeed - 4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="162989369567466" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="127866332705087" title="R32 GT-R">
+            <sub-events>
+                <event-block any="1" sid="695251281282967">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="924159088769014" type="Cars">
+                            <param id="0" name="Animation">&quot;R32GTRSilver&quot;</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="706797458827854" type="Cars">
+                            <param id="0" name="Animation">&quot;R32GTRDarkGrey&quot;</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="696777140091963" type="Cars">
+                            <param id="0" name="Animation">&quot;R32GTRYellow&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Car" id="6" name="Set deceleration" sid="147563523160570" type="Cars">
+                            <param id="0" name="Deceleration">24 * 2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="762597894653893" type="Cars">
+                            <param id="0" name="Instance variable">MinRPM</param>
+                            <param id="1" name="Value">950</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="792233769553989" type="Cars">
+                            <param id="0" name="Instance variable">MaxRPM</param>
+                            <param id="1" name="Value">7500</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="933438232762037" type="Cars">
+                            <param id="0" name="Instance variable">Gear1MaxSpeed</param>
+                            <param id="1" name="Value">60 * 2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="800216747817441" type="Cars">
+                            <param id="0" name="Instance variable">Gear2MaxSpeed</param>
+                            <param id="1" name="Value">110 * 2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="673606169055231" type="Cars">
+                            <param id="0" name="Instance variable">Gear3MaxSpeed</param>
+                            <param id="1" name="Value">160 * 2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="403003491665305" type="Cars">
+                            <param id="0" name="Instance variable">Gear4MaxSpeed</param>
+                            <param id="1" name="Value">208 * 2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="548712679775992" type="Cars">
+                            <param id="0" name="Instance variable">Gear5MaxSpeed</param>
+                            <param id="1" name="Value">258 * 2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="472588301255834" type="Cars">
+                            <param id="0" name="Instance variable">TopSpeed</param>
+                            <param id="1" name="Value">309 * 2</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="640245671672581">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="575281478271664" type="Cars">
+                                    <param id="0" name="Instance variable">CurrentGear</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Car" id="5" name="Set acceleration" sid="511948433485995" type="Cars">
+                                    <param id="0" name="Acceleration">32 * 2</param>
+                                </action>
+                                <action behavior="Car" id="4" name="Set max speed" sid="633866633953203" type="Cars">
+                                    <param id="0" name="Max Speed">Cars.Gear1MaxSpeed</param>
+                                </action>
+                                <action behavior="Car" id="9" name="Set steer speed" sid="196388001454823" type="Cars">
+                                    <param id="0" name="Steer speed">140</param>
+                                </action>
+                                <action behavior="Car" id="10" name="Set drift recover" sid="732501829787536" type="Cars">
+                                    <param id="0" name="Drift recover">90</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="986068698990396" type="Cars">
+                                    <param id="0" name="Instance variable">RPM</param>
+                                    <param id="1" name="Value">Cars.MinRPM + (abs(Cars.Car.Speed) / Cars.Gear1MaxSpeed) * (Cars.MaxRPM - Cars.MinRPM)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="970156169435363">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="159627350771525" type="Cars">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Speed">Cars.Gear1MaxSpeed</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="329540879490392" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="328114076761317">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="182609743548449" type="Cars">
+                                    <param id="0" name="Instance variable">CurrentGear</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Car" id="5" name="Set acceleration" sid="750168872549799" type="Cars">
+                                    <param id="0" name="Acceleration">15 * 2</param>
+                                </action>
+                                <action behavior="Car" id="4" name="Set max speed" sid="620526051497002" type="Cars">
+                                    <param id="0" name="Max Speed">Cars.Gear2MaxSpeed</param>
+                                </action>
+                                <action behavior="Car" id="9" name="Set steer speed" sid="903719878336247" type="Cars">
+                                    <param id="0" name="Steer speed">90</param>
+                                </action>
+                                <action behavior="Car" id="10" name="Set drift recover" sid="964515723271543" type="Cars">
+                                    <param id="0" name="Drift recover">100</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="399520757240158" type="Cars">
+                                    <param id="0" name="Instance variable">RPM</param>
+                                    <param id="1" name="Value">Cars.MinRPM + (abs(Cars.Car.Speed) / Cars.Gear2MaxSpeed) * (Cars.MaxRPM - Cars.MinRPM)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="519069818512872">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="258196045293662" type="Cars">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Speed">Cars.Gear2MaxSpeed</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="753334966690751" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="885653053533352">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="297365331849506" type="Cars">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Speed">Cars.Gear1MaxSpeed - 4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="349464920485037" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="777295463829120">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="298925964481785" type="Cars">
+                                    <param id="0" name="Instance variable">CurrentGear</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Car" id="5" name="Set acceleration" sid="553562515868134" type="Cars">
+                                    <param id="0" name="Acceleration">11 * 2</param>
+                                </action>
+                                <action behavior="Car" id="4" name="Set max speed" sid="903648732584428" type="Cars">
+                                    <param id="0" name="Max Speed">Cars.Gear3MaxSpeed</param>
+                                </action>
+                                <action behavior="Car" id="9" name="Set steer speed" sid="895518332404907" type="Cars">
+                                    <param id="0" name="Steer speed">70</param>
+                                </action>
+                                <action behavior="Car" id="10" name="Set drift recover" sid="143598904438144" type="Cars">
+                                    <param id="0" name="Drift recover">110</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="706688374344208" type="Cars">
+                                    <param id="0" name="Instance variable">RPM</param>
+                                    <param id="1" name="Value">Cars.MinRPM + (abs(Cars.Car.Speed) / Cars.Gear3MaxSpeed) * (Cars.MaxRPM - Cars.MinRPM)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="716113632677599">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="324313714374389" type="Cars">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Speed">Cars.Gear3MaxSpeed</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="648202066787491" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="622440485306966">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="872691535136423" type="Cars">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Speed">Cars.Gear2MaxSpeed - 4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="958433767920912" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="645248290828530">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="793964391969327" type="Cars">
+                                    <param id="0" name="Instance variable">CurrentGear</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Car" id="5" name="Set acceleration" sid="933388170243288" type="Cars">
+                                    <param id="0" name="Acceleration">7.8 * 2</param>
+                                </action>
+                                <action behavior="Car" id="4" name="Set max speed" sid="492508514270657" type="Cars">
+                                    <param id="0" name="Max Speed">Cars.Gear4MaxSpeed</param>
+                                </action>
+                                <action behavior="Car" id="9" name="Set steer speed" sid="126226571406058" type="Cars">
+                                    <param id="0" name="Steer speed">55</param>
+                                </action>
+                                <action behavior="Car" id="10" name="Set drift recover" sid="377305930786903" type="Cars">
+                                    <param id="0" name="Drift recover">120</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="756950288635015" type="Cars">
+                                    <param id="0" name="Instance variable">RPM</param>
+                                    <param id="1" name="Value">Cars.MinRPM + (abs(Cars.Car.Speed) / Cars.Gear4MaxSpeed) * (Cars.MaxRPM - Cars.MinRPM)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="783479736279616">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="142072529652447" type="Cars">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Speed">Cars.Gear4MaxSpeed</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="524895672869961" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="403670237915172">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="968501077634109" type="Cars">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Speed">Cars.Gear3MaxSpeed - 4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="424207765600100" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="208206354303219">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="510800488152119" type="Cars">
+                                    <param id="0" name="Instance variable">CurrentGear</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Car" id="5" name="Set acceleration" sid="399440423615013" type="Cars">
+                                    <param id="0" name="Acceleration">4.2 * 2</param>
+                                </action>
+                                <action behavior="Car" id="4" name="Set max speed" sid="304988377207389" type="Cars">
+                                    <param id="0" name="Max Speed">Cars.Gear5MaxSpeed</param>
+                                </action>
+                                <action behavior="Car" id="9" name="Set steer speed" sid="378068635936638" type="Cars">
+                                    <param id="0" name="Steer speed">42</param>
+                                </action>
+                                <action behavior="Car" id="10" name="Set drift recover" sid="702281853492267" type="Cars">
+                                    <param id="0" name="Drift recover">155</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="913429588437584" type="Cars">
+                                    <param id="0" name="Instance variable">RPM</param>
+                                    <param id="1" name="Value">Cars.MinRPM + (abs(Cars.Car.Speed) / Cars.Gear5MaxSpeed) * (Cars.MaxRPM - Cars.MinRPM)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="436058375798007">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="748491972935174" type="Cars">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Speed">Cars.Gear5MaxSpeed</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="128765670389351" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="785131644925347">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="454462014127608" type="Cars">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Speed">Cars.Gear4MaxSpeed - 4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="732135055790089" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="329780398626808">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="440150775322098" type="Cars">
+                                    <param id="0" name="Instance variable">CurrentGear</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Car" id="5" name="Set acceleration" sid="453803044771731" type="Cars">
+                                    <param id="0" name="Acceleration">1.2 * 2</param>
+                                </action>
+                                <action behavior="Car" id="4" name="Set max speed" sid="679968432289897" type="Cars">
+                                    <param id="0" name="Max Speed">Cars.TopSpeed</param>
+                                </action>
+                                <action behavior="Car" id="9" name="Set steer speed" sid="696001233861506" type="Cars">
+                                    <param id="0" name="Steer speed">37</param>
+                                </action>
+                                <action behavior="Car" id="10" name="Set drift recover" sid="964202007936667" type="Cars">
+                                    <param id="0" name="Drift recover">200</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="179479775421472" type="Cars">
+                                    <param id="0" name="Instance variable">RPM</param>
+                                    <param id="1" name="Value">Cars.MinRPM + (abs(Cars.Car.Speed) / Cars.TopSpeed) * (Cars.MaxRPM - Cars.MinRPM)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="424468577039045">
+                                    <conditions>
+                                        <condition behavior="Car" id="1" name="Compare speed" sid="614889119460916" type="Cars">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Speed">Cars.Gear5MaxSpeed - 4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="523672370472264" type="Cars">
+                                            <param id="0" name="Instance variable">CurrentGear</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

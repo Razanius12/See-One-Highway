@@ -1,0 +1,891 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>See One Highway</name>
+    <description>&quot;See One Highway&quot; is a fast-paced top-down 2D car racing game set in Japan, offering players an intense street-racing experience with simple gameplay and intuitive controls.</description>
+    <version>0.1</version>
+    <author>Razanius12</author>
+    <author-email>razanius12@gmail.com</author-email>
+    <author-website>https://github.com/Razanius12</author-website>
+    <app-id>com.razanius12.app</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="blurhorizontal">Blur Horizontal</effect>
+        <effect author="Scirra" id="blurvertical">Blur Vertical</effect>
+        <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
+        <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>1</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">High quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">Yes</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">No</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="UI">
+            <object-type name="ArrowButton" sid="381897712536083">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="313541352226089" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\1st Project\LOST IN AUSTRALIA\ASSETS\HUD\JUMP.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BahnschriftFont" sid="463047613242251">
+                <plugin id="Spritefont2" />
+                <instance-variables>
+                    <instance-variable name="Name" sid="517239529231189" type="string" />
+                    <instance-variable name="tOpacity" sid="129039220411678" type="number" />
+                </instance-variables>
+                <texture original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\Bahnschrift font.png" />
+            </object-type>
+            <object-type name="LCDFont" sid="599509401862657">
+                <plugin id="Spritefont2" />
+                <instance-variables>
+                    <instance-variable name="Name" sid="620790712644427" type="string" />
+                </instance-variables>
+                <texture original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\LCD font.png" />
+            </object-type>
+            <object-type name="Tachometer" sid="617672015741744">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="761436458191415" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\Tachometer.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TachometerNeedle" sid="916197008251592">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248865820746363" speed="5">
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.83871" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\TachometerNeedle.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="VHSGothicFont" sid="826691081371606">
+                <plugin id="Spritefont2" />
+                <instance-variables>
+                    <instance-variable name="Name" sid="673897094392019" type="string" />
+                </instance-variables>
+                <texture original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\VHS Gothic font.png" />
+            </object-type>
+            <object-type name="PlayerNameInput" sid="913691185721225">
+                <plugin id="TextBox" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Maps">
+            <object-type name="C1Loop" sid="473456744554832">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494618108430703" speed="5">
+                        <frame duration="1" hotspotX="0.500541" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\C1 Loop.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="NewBeltLine" sid="886290151517982">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839414882641162" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\New Belt Line.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Backgrounds">
+            <object-type name="MapBG" sid="613943791479277">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572476292908429" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MenuUIBG" sid="639406356347867">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="188320494932372" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GarageBG" sid="327976105719203">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="461448531774997" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BackgroundBlack" sid="422925692823024">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Name" sid="833496817742129" type="string" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="785207023703372" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="DaikokuPA" sid="991627141396085">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870820597148651" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="C1LoopBG" sid="940735211031874">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="946943150597274" speed="5">
+                        <frame duration="1" hotspotX="0.500261" hotspotY="0.500463" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Thumbnails">
+            <object-type name="C1LoopThumb" sid="568059707794073">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300790108294922" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GTR_R32Thumb" sid="239713055512075">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="915961335982456" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500935" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\GT-R R32.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RX8Thumb" sid="642720652625600">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="857684668620153" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\RX-8.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="WorldMap">
+            <object-folder name="C1Loop">
+                <object-type name="a1" sid="199413607043367">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256467696216924" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\1.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="a2" sid="287042304190066">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="684230251859435" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\2.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="b1" sid="555920189965201">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432275729703698" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\3.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="b2" sid="893402499319350">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="831204451870251" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\4.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="b3" sid="903114988202398">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="611829223195956" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\5.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="b4" sid="461893357125700">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581763460116792" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\6.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="b5" sid="483199982113050">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="925977973863799" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\7.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="c1" sid="970885420638824">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="832961178392026" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\c1.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="c2" sid="862739139168295">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="434347104203967" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\c2.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="c3" sid="629305413016817">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="250002730906223" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\c3.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="c4" sid="469846893545356">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604148083859998" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\c4.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="d1" sid="300631677522391">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="801066095033996" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\d1.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="d2" sid="316843253826199">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="947022951101128" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\d2.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="d3" sid="400033382342360">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459042758082020" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\d3.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="d4" sid="863721749419700">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="837035356430895" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\d4.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="e1" sid="201241749989538">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="371751637455723" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\e1.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="e2" sid="894508696095188">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="684542919579868" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\e2.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="e3" sid="298182228881008">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="473689941924619" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\e3.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="e4" sid="365758054937849">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249371350895520" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\e4.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="f1" sid="765720957045942">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954012730959377" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\f1.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="f2" sid="159890829709934">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="735916053204339" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\f2.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="f3" sid="323708610299807">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="843468332139633" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\f3.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="g1" sid="830037481342891">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="687947548919623" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\g1.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="g2" sid="429883798171536">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945946157208105" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\g2.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="g3" sid="116345092058362">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="310476878451140" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\g3.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="DaikokuPA">
+                <object-type name="texture" sid="790445981896130">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="877279025961822" speed="0">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\asphalt.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\1.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\2.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\3.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\4.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\5.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\6.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\7.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\8.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\9.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\10.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="InvisibleWall" sid="521159762457980">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="282588093809534">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="587432504636871" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RaceLines" sid="618092393376557">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Number" sid="994339279367684" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="834531985295160" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="placeholder1" sid="457445663579822">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538910376073578" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="placeholder2" sid="847009345300962">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="133280522057300" speed="0">
+                        <frame duration="0" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Cones" sid="263557176019351">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="255742819301334">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="214454837259890" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\Cones.png">
+                            <collision-poly>
+                                <point x="0.0625" y="0.0625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.9375" y="0.0625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.9375" y="0.9375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0625" y="0.9375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="StopSpot" sid="650756553677486">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Flash" sid="566087693999130">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="772078430474887" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="StoryTrigger" sid="888376085848379">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Number" sid="817808953735756" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248822541634764" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="WhiteLights" sid="740710544530324">
+                <plugin id="Sprite" />
+                <effects>
+                    <effect-type name="BlurVertical">
+                        <effect id="blurvertical" />
+                    </effect-type>
+                    <effect-type name="BlurHorizontal">
+                        <effect id="blurhorizontal" />
+                    </effect-type>
+                    <effect-type name="GlowVertical">
+                        <effect id="glowvertical" />
+                    </effect-type>
+                    <effect-type name="GlowHorizontal">
+                        <effect id="glowhorizontal" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353062767013035" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="CarParts">
+            <object-type name="AiLights" sid="803744421318755">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="302888039573022">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="789245509722136" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\Lights.png">
+                            <collision-poly>
+                                <point x="0.498525" y="0.25" />
+                                <point x="0.787611" y="0.183673" />
+                                <point x="0.787611" y="0.816327" />
+                                <point x="0.498525" y="0.75" />
+                                <point x="0.00294985" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PlayerLights" sid="985498035008144">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="841805412769273">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="253584783365752" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\Lights.png">
+                            <collision-poly>
+                                <point x="0.498525" y="0.25" />
+                                <point x="0.787611" y="0.183673" />
+                                <point x="0.787611" y="0.816327" />
+                                <point x="0.498525" y="0.75" />
+                                <point x="0.00294985" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Cars" sid="851888077774960">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="isPlayer" sid="181381362076257" type="number" />
+                    <instance-variable name="MinRPM" sid="793862666268126" type="number" />
+                    <instance-variable name="MaxRPM" sid="174308665318546" type="number" />
+                    <instance-variable name="RPM" sid="304490187995099" type="number" />
+                    <instance-variable name="CurrentGear" sid="261259842408618" type="number" />
+                    <instance-variable name="Gear1MaxSpeed" sid="979832593804724" type="number" />
+                    <instance-variable name="Gear2MaxSpeed" sid="680937368575816" type="number" />
+                    <instance-variable name="Gear3MaxSpeed" sid="914217053847514" type="number" />
+                    <instance-variable name="Gear4MaxSpeed" sid="316588186556555" type="number" />
+                    <instance-variable name="Gear5MaxSpeed" sid="418824230666487" type="number" />
+                    <instance-variable name="TopSpeed" sid="509403485401306" type="number" />
+                    <instance-variable name="angleToPlayer" sid="761520270353524" type="number" />
+                    <instance-variable name="angleToLine" sid="182148356112576" type="number" />
+                    <instance-variable name="angleToLineDiff" sid="690345248436378" type="number" />
+                    <instance-variable name="nextLineAngle1" sid="512194632884915" type="number" />
+                    <instance-variable name="nextLineAngleDiff1" sid="676855259951550" type="number" />
+                    <instance-variable name="nextLineAngle2" sid="484997782680669" type="number" />
+                    <instance-variable name="nextLineAngleDiff2" sid="545952277538163" type="number" />
+                    <instance-variable name="LineCount" sid="973500783017852" type="number" />
+                    <instance-variable name="StoryTriggerAI" sid="402970112816003" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Car" sid="603215734900321">
+                        <behavior id="Car" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="982365428375422">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="267096154613993">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="RX8" pingpong="0" repeatcount="0" repeatto="0" sid="159508335356885" speed="0">
+                        <frame duration="1" hotspotX="0.501466" hotspotY="0.501754" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\RX-8.png">
+                            <collision-poly>
+                                <point x="0" y="0.5" />
+                                <point x="0.050822" y="0.120567" />
+                                <point x="0.499253" y="0.024823" />
+                                <point x="0.950673" y="0.117021" />
+                                <point x="1" y="0.5" />
+                                <point x="0.950673" y="0.882979" />
+                                <point x="0.499253" y="0.975177" />
+                                <point x="0.050822" y="0.879433" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="R32GTRSilver" pingpong="0" repeatcount="0" repeatto="0" sid="408804961818263" speed="0">
+                        <frame duration="1" hotspotX="0.500697" hotspotY="0.498328" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\GT-R R32 Silver.png">
+                            <collision-poly>
+                                <point x="0.958159" y="0.899666" />
+                                <point x="0.500697" y="0.963211" />
+                                <point x="0.0264993" y="0.936455" />
+                                <point x="0.00139469" y="0.501672" />
+                                <point x="0.0264993" y="0.0635452" />
+                                <point x="0.500697" y="0.0367893" />
+                                <point x="0.958159" y="0.100334" />
+                                <point x="1" y="0.501672" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="R32GTRDarkGrey" pingpong="0" repeatcount="0" repeatto="0" sid="496595779033712" speed="0">
+                        <frame duration="1" hotspotX="0.500697" hotspotY="0.501695" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\GT-R R32 Dark Grey.png">
+                            <collision-poly>
+                                <point x="0.958159" y="0.898305" />
+                                <point x="0.500697" y="0.969492" />
+                                <point x="0.0251046" y="0.938983" />
+                                <point x="0.00139469" y="0.501695" />
+                                <point x="0.0251046" y="0.061017" />
+                                <point x="0.500697" y="0.0305085" />
+                                <point x="0.958159" y="0.101695" />
+                                <point x="1" y="0.501695" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="R32GTRYellow" pingpong="0" repeatcount="0" repeatto="0" sid="927751015800703" speed="0">
+                        <frame duration="1" hotspotX="0.499303" hotspotY="0.498305" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\GT-R R32 Yellow.png">
+                            <collision-poly>
+                                <point x="0.041841" y="0.101695" />
+                                <point x="0.499303" y="0.0305085" />
+                                <point x="0.974895" y="0.061017" />
+                                <point x="0.998605" y="0.498305" />
+                                <point x="0.974895" y="0.938983" />
+                                <point x="0.499303" y="0.969492" />
+                                <point x="0.041841" y="0.898305" />
+                                <point x="0" y="0.498305" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Characters">
+            <object-type name="RibariiNijuuhachi" sid="847486478734406">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="FullName" sid="307156169774893" type="string" />
+                    <instance-variable name="Nickname" sid="886365475895228" type="string" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="562559115510249" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\Ribarii Nijuuhachi (リバリー二十八).png">
+                            <collision-poly>
+                                <point x="0.29698" y="0.172852" />
+                                <point x="0.5" y="0.0483398" />
+                                <point x="0.687081" y="0.182129" />
+                                <point x="0.883389" y="0.5" />
+                                <point x="0.697148" y="0.82373" />
+                                <point x="0.5" y="0.653809" />
+                                <point x="0.347315" y="0.797852" />
+                                <point x="0.263423" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AkiraHara" sid="638084297914255">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="FullName" sid="454779184459432" type="string" />
+                    <instance-variable name="Nickname" sid="134261891533871" type="string" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="437296195553328" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\Akira Hara.png">
+                            <collision-poly>
+                                <point x="0.280793" y="0.131348" />
+                                <point x="0.5" y="0.00244141" />
+                                <point x="0.683716" y="0.147949" />
+                                <point x="0.632568" y="0.5" />
+                                <point x="0.798539" y="0.905762" />
+                                <point x="0.5" y="0.932129" />
+                                <point x="0.297495" y="0.86084" />
+                                <point x="0.22547" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="Logo" sid="165806919202726">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="520651684872516" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502924" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\Logo.png">
+                        <collision-poly>
+                            <point x="0.0136719" y="0.0404624" />
+                            <point x="0.5" y="0.0404624" />
+                            <point x="0.816406" y="0.543353" />
+                            <point x="0.972656" y="0.919075" />
+                            <point x="0.5" y="0.421965" />
+                            <point x="0.132813" y="0.606936" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LoadingBarOuter" sid="844710158241610">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="603453769633414" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LoadingBarInner" sid="524836170652350">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="684986657318252" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="341973036096045">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Keyboard" sid="617524613646155">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Function" sid="203825949606578">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Browser" sid="405102145118720">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Mouse" sid="847515188348462">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="NWjs" sid="317978955937158">
+            <plugin id="NodeWebkit" />
+        </object-type>
+        <object-type name="BoxTile" sid="247613099841291">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="541667282322262" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="499179303885689">
+            <plugin id="Audio" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Credits.xml</layout>
+        <layout>C1 Loop.xml</layout>
+        <layout>Test Track.xml</layout>
+        <layout>Parking Lot.xml</layout>
+        <layout>World Map.xml</layout>
+        <layout>Stage 1 Story.xml</layout>
+        <layout>Stage 2 Story.xml</layout>
+        <layout>Stage 3 Story.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Global Event.xml</event-sheet>
+        <event-sheet>Game Event.xml</event-sheet>
+        <event-sheet>Menu Event.xml</event-sheet>
+        <event-sheet>Car Class.xml</event-sheet>
+        <event-sheet>Story Event.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="11">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="12" />
+        <global-instance type="Function" uid="99" />
+        <global-instance type="Browser" uid="330" />
+        <global-instance type="Mouse" uid="329" />
+        <global-instance type="NWjs" uid="331" />
+        <global-instance type="Audio" uid="512">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="207384__npeo__gas-station-ambience.m4a" />
+        <file name="207384__npeo__gas-station-ambience.ogg" />
+        <file name="332056__qubodup__fast-collision.m4a" />
+        <file name="332056__qubodup__fast-collision.ogg" />
+        <file name="332058__qubodup__collision.m4a" />
+        <file name="332058__qubodup__collision.ogg" />
+        <file name="390786__mhad__engine_idle.m4a" />
+        <file name="390786__mhad__engine_idle.ogg" />
+        <file name="468925__malakme__high-text-blip.ogg" />
+        <file name="468927__malakme__medium-text-blip.ogg" />
+        <file name="609825__itinerantmonk108__2018-nissa-rogue-idle.m4a" />
+        <file name="609825__itinerantmonk108__2018-nissa-rogue-idle.ogg" />
+        <file name="611801__metalfortress__collapse.m4a" />
+        <file name="611801__metalfortress__collapse.ogg" />
+        <file name="611807__metalfortress__text_click.m4a" />
+        <file name="611807__metalfortress__text_click.ogg" />
+        <file name="774489__tetrisrocker__highway-car-noise.m4a" />
+        <file name="774489__tetrisrocker__highway-car-noise.ogg" />
+        <file name="636502__j_soundeffects__car-horn-from-inside-of-1990-volvo-240-sedan.m4a" />
+        <file name="636502__j_soundeffects__car-horn-from-inside-of-1990-volvo-240-sedan.ogg" />
+        <file name="639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl.m4a" />
+        <file name="639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="InRazFies.m4a" />
+        <file name="InRazFies.ogg" />
+        <file name="bRAZCore.m4a" />
+        <file name="bRAZCore.ogg" />
+        <file name="Ghosts_on_the_Overpass.m4a" />
+        <file name="Ghosts_on_the_Overpass.ogg" />
+        <file name="The_Other_Me.m4a" />
+        <file name="The_Other_Me.ogg" />
+        <file name="Ghosts_on_the_Overpass_Remastered.m4a" />
+        <file name="Ghosts_on_the_Overpass_Remastered.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

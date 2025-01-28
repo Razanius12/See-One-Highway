@@ -1,0 +1,1416 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu Event</name>
+    <events>
+        <include>Global Event</include>
+        <variable constant="0" name="isLoaded" sid="899136402134891" static="0" type="number">0</variable>
+        <event-block sid="764415986679094">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="344803724256975" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="980734737215767" type="System">
+                    <param id="0" name="Layer">&quot;Menu&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="782196653888085" type="System">
+                    <param id="0" name="Layer">&quot;Level Selection&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="762835602145399" type="System">
+                    <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="667316403258565">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="661077447356034" type="System">
+                            <param id="0" name="Variable">isLoaded</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="675343580125060" type="System">
+                            <param id="0" name="Group name">&quot;Loading&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="462260156808948" type="System">
+                            <param id="0" name="Group name">&quot;Car Selection&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="968211365926499" type="System">
+                            <param id="0" name="Group name">&quot;Level Selection&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="321726415821283" type="System">
+                            <param id="0" name="Layer">&quot;Splash&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="769044528629363" type="System">
+                            <param id="0" name="Layer">&quot;Menu&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="750443239936240" type="System">
+                            <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="100403201034418" type="System">
+                            <param id="0" name="Layer">&quot;Level Selection&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="624787998009540" type="System">
+                            <param id="0" name="Group name">&quot;Menu&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="130025519488668" type="Logo">
+                            <param id="0" name="X">980</param>
+                            <param id="1" name="Y">140</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="163719633515015" type="Logo">
+                            <param id="0" name="Scale">0.5</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="689258238718612" type="Audio" />
+                        <action id="0" name="Play" sid="939532823291479" type="Audio">
+                            <param id="0" name="Audio file">InRazFies</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">MusicVolume</param>
+                            <param id="1" name="Tag (optional)">&quot;bg-music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="692523456472300">
+            <conditions>
+                <condition id="17" name="On tap object" sid="161897903897803" type="Touch">
+                    <param id="0" name="Object">BahnschriftFont</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="269523820235750" type="Audio">
+                    <param id="0" name="Audio file">611807__metalfortress__text_click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">SFXVolume</param>
+                    <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="546472884320316">
+            <conditions>
+                <condition id="17" name="On tap object" sid="500788315445602" type="Touch">
+                    <param id="0" name="Object">ArrowButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="256897765270322" type="Audio">
+                    <param id="0" name="Audio file">611807__metalfortress__text_click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">SFXVolume</param>
+                    <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="397887203160239" title="Loading">
+            <sub-events>
+                <comment>SpriteFont UID 2 is the Loading text</comment>
+                <event-block sid="675820981049642">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="200177738583721" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="682628314019893" type="LoadingBarInner">
+                            <param id="0" name="Width">round(loadingprogress*1120)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="717025552413741">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="662084443997030" type="BahnschriftFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Loading&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="779473406601345" type="BahnschriftFont">
+                                    <param id="0" name="Text">&quot;Loading &quot; &amp; round(loadingprogress*100) &amp; &quot;%&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="263810196167570">
+                    <conditions>
+                        <condition id="-25" name="On loader layout complete" sid="287522783187485" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="964057307651537" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="0" name="Play" sid="383860580598843" type="Audio">
+                            <param id="0" name="Audio file">InRazFies</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">MusicVolume</param>
+                            <param id="1" name="Tag (optional)">&quot;bg-music&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="349002290535805" type="System">
+                            <param id="0" name="Layer">&quot;Splash&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="509302475942594" type="System">
+                            <param id="0" name="Layer">&quot;Menu&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="958198387118123" type="System">
+                            <param id="0" name="Group name">&quot;Menu&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="979667354958770" type="Logo">
+                            <param id="0" name="X">980</param>
+                            <param id="1" name="Y">140</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="955094889933038" type="Logo">
+                            <param id="0" name="Scale">0.5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="872580174323873" type="System">
+                            <param id="0" name="Variable">isLoaded</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="960966399320492" title="Menu">
+            <sub-events>
+                <event-block sid="891643703590481">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="493762632412942" type="Touch">
+                            <param id="0" name="Object">BahnschriftFont</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="297592895404551" type="BahnschriftFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Story&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="797266510837781">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="846359977936014" type="System">
+                                    <param id="0" name="Variable">StageProgression</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="659758072754924" type="System">
+                                    <param id="0" name="Layout">Stage 1 Story</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="351456056463278">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="664811058630373" type="System">
+                                    <param id="0" name="Variable">StageProgression</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="490797747027035" type="System">
+                                    <param id="0" name="Variable">SelectedTrack</param>
+                                    <param id="1" name="Value">&quot;Daikoku PA&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="888089469021659" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="648450837831093" type="System">
+                                    <param id="0" name="Layout">Parking Lot</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="949099824523858" type="System">
+                                    <param id="0" name="Variable">StoryProgression</param>
+                                    <param id="1" name="Value">35</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="320543757729336">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="755800500471601" type="System">
+                                    <param id="0" name="Variable">StageProgression</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="604623081424828" type="System">
+                                    <param id="0" name="Layout">Stage 2 Story</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="574575515485126">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="631951280002240" type="System">
+                                    <param id="0" name="Variable">StageProgression</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="528871801541111" type="System">
+                                    <param id="0" name="Variable">SelectedTrack</param>
+                                    <param id="1" name="Value">&quot;C1 Loop&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="905611846261938" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="197437763848726" type="System">
+                                    <param id="0" name="Layout">C1 Loop</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="719868915040896" type="System">
+                                    <param id="0" name="Variable">StoryProgression</param>
+                                    <param id="1" name="Value">63</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="984721502380283">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="204297340537857" type="System">
+                                    <param id="0" name="Variable">StageProgression</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="226000670628231" type="System">
+                                    <param id="0" name="Layout">Stage 3 Story</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="473525368803368">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="376616648557200" type="System">
+                                    <param id="0" name="Variable">StageProgression</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="434011970407999" type="System">
+                                    <param id="0" name="Variable">SelectedTrack</param>
+                                    <param id="1" name="Value">&quot;C1 Loop&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="478039238988075" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="891098628003327" type="System">
+                                    <param id="0" name="Layout">C1 Loop</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="744778211548573" type="System">
+                                    <param id="0" name="Variable">StoryProgression</param>
+                                    <param id="1" name="Value">105</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="810189079078915">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="531683026202809" type="Touch">
+                            <param id="0" name="Object">BahnschriftFont</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="783485089078932" type="BahnschriftFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Freeroam&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="496178773926378" type="System">
+                            <param id="0" name="Layer">&quot;Menu&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="744722678265234" type="System">
+                            <param id="0" name="Group name">&quot;Menu&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="351954388056712" type="System">
+                            <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="340432837858212" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="163598153839782" type="System">
+                            <param id="0" name="Group name">&quot;Car Selection&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="955322942791806" type="Logo">
+                            <param id="0" name="X">80</param>
+                            <param id="1" name="Y">680</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="641073155985728" type="Logo">
+                            <param id="0" name="Scale">0.2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="488916536970665">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="265064111598367" type="Keyboard">
+                            <param id="0" name="Key">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="354862015740639" type="System">
+                            <param id="0" name="Layer">&quot;Menu&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="581437779801823" type="System">
+                            <param id="0" name="Group name">&quot;Menu&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="311607141502862" type="System">
+                            <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="598703027321708" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="218029971494483" type="System">
+                            <param id="0" name="Group name">&quot;Car Selection&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="479550667386271" type="Logo">
+                            <param id="0" name="X">80</param>
+                            <param id="1" name="Y">680</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="193925098451768" type="Logo">
+                            <param id="0" name="Scale">0.2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="442720036519496">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="793745606959851" type="Touch">
+                            <param id="0" name="Object">BahnschriftFont</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="367857597318503" type="BahnschriftFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Settings&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="26" name="Show dev tools" sid="814569767066370" type="NWjs" />
+                    </actions>
+                </event-block>
+                <event-block sid="710255745007875">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="656570976094547" type="Touch">
+                            <param id="0" name="Object">BahnschriftFont</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="275177722114439" type="BahnschriftFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Exit&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Close" sid="851920717781908" type="Browser" />
+                        <action id="17" name="Execute Javascript" sid="935669287796725" type="Browser">
+                            <param id="0" name="Javascript">&quot; process.exit(1); global.gc(); &quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="992418666756713" title="Car Selection">
+            <sub-events>
+                <event-block sid="760889292533913">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="326044268911909" type="Touch">
+                            <param id="0" name="Object">ArrowButton</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>ArrowButton UID 13 is the Left Button</comment>
+                        <event-block sid="528952832452741">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="302814195010325" type="ArrowButton">
+                                    <param id="0" name="Unique ID">13</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="449194927878136" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>ArrowButton UID 14 is the Right Button</comment>
+                        <event-block sid="602076101167726">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="924717986568956" type="ArrowButton">
+                                    <param id="0" name="Unique ID">14</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="821028382216763" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="938680400245472">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="872884186290287" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="811432580165082" type="System">
+                            <param id="0" name="Variable">SelectedCarID</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="712751115291958">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="216575431547529" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="997631844607260" type="System">
+                            <param id="0" name="Variable">SelectedCarID</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="964255097105370">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="363988803928671" type="Touch">
+                            <param id="0" name="Object">BahnschriftFont</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>SpriteFont UID 17 is the Back text</comment>
+                        <event-block sid="463405385436395">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="797823694183944" type="BahnschriftFont">
+                                    <param id="0" name="Unique ID">17</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="433727067290483" type="System">
+                                    <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="280135663091076" type="System">
+                                    <param id="0" name="Group name">&quot;Car Selection&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="351961056954112" type="System">
+                                    <param id="0" name="Layer">&quot;Menu&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="892813436364181" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="941419036006558" type="System">
+                                    <param id="0" name="Group name">&quot;Menu&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="223578245293573" type="Logo">
+                                    <param id="0" name="X">980</param>
+                                    <param id="1" name="Y">140</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="590860370157752" type="Logo">
+                                    <param id="0" name="Scale">0.5</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="306325180888569" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Value">-1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="578789509067360" type="System">
+                                    <param id="0" name="Variable">SelectedCar</param>
+                                    <param id="1" name="Value">&quot;null&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="749377550306933" type="System">
+                                    <param id="0" name="Variable">SelectedTrackID</param>
+                                    <param id="1" name="Value">-1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="790987945612411" type="System">
+                                    <param id="0" name="Variable">SelectedTrack</param>
+                                    <param id="1" name="Value">&quot;null&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>SpriteFont UID 18 is the Select text</comment>
+                        <event-block sid="366339887507648">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="985819559302627" type="BahnschriftFont">
+                                    <param id="0" name="Unique ID">18</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="411080688338304">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="377147982934355" type="System">
+                                            <param id="0" name="Variable">SelectedCarID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-4" name="Set layer visible" sid="488817969434851" type="System">
+                                            <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="583085788238931" type="System">
+                                            <param id="0" name="Layer">&quot;Level Selection&quot;</param>
+                                            <param id="1" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="694991000070207" type="System">
+                                            <param id="0" name="Group name">&quot;Car Selection&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="515264329977810" type="System">
+                                            <param id="0" name="Seconds">0.01</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="733575817388495" type="System">
+                                            <param id="0" name="Group name">&quot;Level Selection&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="473159973113155">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="132152752621859" type="System">
+                                            <param id="0" name="Variable">SelectedCarID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-4" name="Set layer visible" sid="189275998972821" type="System">
+                                            <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="157445473298806" type="System">
+                                            <param id="0" name="Layer">&quot;Level Selection&quot;</param>
+                                            <param id="1" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="113285623727002" type="System">
+                                            <param id="0" name="Group name">&quot;Car Selection&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="741343026149706" type="System">
+                                            <param id="0" name="Seconds">0.01</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="940037924255056" type="System">
+                                            <param id="0" name="Group name">&quot;Level Selection&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="573904723656495">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="253691396538024" type="Keyboard">
+                            <param id="0" name="Key">27</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="541836586785448" type="System">
+                            <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="301703650148714" type="System">
+                            <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="241410223104741" type="System">
+                            <param id="0" name="Group name">&quot;Car Selection&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="321047564287384" type="System">
+                            <param id="0" name="Layer">&quot;Menu&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="555032926812954" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="395425172217298" type="System">
+                            <param id="0" name="Group name">&quot;Menu&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="976207961567233" type="Logo">
+                            <param id="0" name="X">980</param>
+                            <param id="1" name="Y">140</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="667025551326168" type="Logo">
+                            <param id="0" name="Scale">0.5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="316714074240776" type="System">
+                            <param id="0" name="Variable">SelectedCarID</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="188066442361311" type="System">
+                            <param id="0" name="Variable">SelectedCar</param>
+                            <param id="1" name="Value">&quot;null&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="482812161904841" type="System">
+                            <param id="0" name="Variable">SelectedTrackID</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="673546568991578" type="System">
+                            <param id="0" name="Variable">SelectedTrack</param>
+                            <param id="1" name="Value">&quot;null&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="542138663741055">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="410719747216914" type="Keyboard">
+                            <param id="0" name="Key">13</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="592190077346316">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="409371780902443" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="699090216478172" type="System">
+                                    <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="320900696586483" type="System">
+                                    <param id="0" name="Layer">&quot;Level Selection&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="888018781477600" type="System">
+                                    <param id="0" name="Group name">&quot;Car Selection&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="309767360513330" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="776040584777793" type="System">
+                                    <param id="0" name="Group name">&quot;Level Selection&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="353846753545334">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="128693169476515" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="447475046507268" type="System">
+                                    <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="678180394674918" type="System">
+                                    <param id="0" name="Layer">&quot;Level Selection&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="470906772894292" type="System">
+                                    <param id="0" name="Group name">&quot;Car Selection&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="916966832256619" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="651694958085504" type="System">
+                                    <param id="0" name="Group name">&quot;Level Selection&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Lock the SelectedCarID so it cannot go below 0</comment>
+                <event-block sid="691042664235462">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="294423900938207" type="BahnschriftFont">
+                            <param id="0" name="Unique ID">19</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="840825399811432" type="System">
+                            <param id="0" name="Variable">SelectedCarID</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="866049504671639" type="System">
+                            <param id="0" name="Variable">SelectedCarID</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Set the text to Locked for ID above 2 (since I only got 2 cars so far)</comment>
+                <event-block sid="585261215648836">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="917950306047758" type="BahnschriftFont">
+                            <param id="0" name="Unique ID">19</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="854971719514536" type="System">
+                            <param id="0" name="Variable">SelectedCarID</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="677284703399265" type="System">
+                            <param id="0" name="Variable">SelectedCar</param>
+                            <param id="1" name="Value">&quot;Locked&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="190920042103856" type="BahnschriftFont">
+                            <param id="0" name="Text">SelectedCar</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="644130109323044" type="GTR_R32Thumb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="892552290597036" type="System">
+                            <param id="0" name="Variable">SelectedCarID</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="871961346832291" title="Set Car Name">
+                    <sub-events>
+                        <comment>Set car name to each corresponding ID</comment>
+                        <event-block sid="612563274631642">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="314186223209982" type="BahnschriftFont">
+                                    <param id="0" name="Unique ID">19</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="535924647377537" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="721182123675406" type="System">
+                                    <param id="0" name="Variable">SelectedCar</param>
+                                    <param id="1" name="Value">&quot;RX-8&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="227701237113346" type="BahnschriftFont">
+                                    <param id="0" name="Text">SelectedCar</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="487655743039009" type="RX8Thumb">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="967060693237557" type="GTR_R32Thumb">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="670238286109164">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="517970994169650" type="BahnschriftFont">
+                                    <param id="0" name="Unique ID">19</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="199262142148318" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="864363192505010" type="System">
+                                    <param id="0" name="Variable">SelectedCar</param>
+                                    <param id="1" name="Value">&quot;GT-R R32&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="941779174385365" type="BahnschriftFont">
+                                    <param id="0" name="Text">SelectedCar</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="683274128381045" type="RX8Thumb">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="473543248253071" type="GTR_R32Thumb">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="722611453618131" title="Level Selection">
+            <sub-events>
+                <event-block sid="442979026621964">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="133389839449546" type="Touch">
+                            <param id="0" name="Object">ArrowButton</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>ArrowButton UID 23 is the Left Button</comment>
+                        <event-block sid="430956890159576">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="204327048603347" type="ArrowButton">
+                                    <param id="0" name="Unique ID">23</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="226211714206529" type="System">
+                                    <param id="0" name="Variable">SelectedTrackID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>ArrowButton UID 24 is the Right Button</comment>
+                        <event-block sid="849980355390394">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="823224640500555" type="ArrowButton">
+                                    <param id="0" name="Unique ID">24</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="866171977185624" type="System">
+                                    <param id="0" name="Variable">SelectedTrackID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="213925370324210">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="341680297595709" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="268907571705215" type="System">
+                            <param id="0" name="Variable">SelectedTrackID</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="103615174680204">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="112525453851832" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="536900813098417" type="System">
+                            <param id="0" name="Variable">SelectedTrackID</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="649679603640359">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="608513809018305" type="Touch">
+                            <param id="0" name="Object">BahnschriftFont</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>SpriteFont UID 26 is the Back text</comment>
+                        <event-block sid="118191446153387">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="227785647319868" type="BahnschriftFont">
+                                    <param id="0" name="Unique ID">26</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="613929906134802" type="System">
+                                    <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="240720256751716" type="System">
+                                    <param id="0" name="Layer">&quot;Level Selection&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="706455414600182" type="System">
+                                    <param id="0" name="Group name">&quot;Level Selection&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="807448295902512" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="811867158115563" type="System">
+                                    <param id="0" name="Group name">&quot;Car Selection&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>SpriteFont UID 27 is the Select text</comment>
+                        <event-block sid="991308727662447">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="757039148102216" type="BahnschriftFont">
+                                    <param id="0" name="Unique ID">27</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="537921426448598">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="366504116341993" type="System">
+                                            <param id="0" name="Variable">SelectedTrackID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="267920309687253" type="System">
+                                            <param id="0" name="Layout">C1 Loop</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="473534399933220" type="Audio">
+                                            <param id="0" name="Audio file">639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">SFXVolume</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="418039282151892">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="855755284408791" type="System">
+                                            <param id="0" name="Variable">SelectedTrackID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="394111741075153" type="System">
+                                            <param id="0" name="Layout">Test Track</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="747597956403653" type="Audio">
+                                            <param id="0" name="Audio file">639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">SFXVolume</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="192178289955311">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="909933959145841" type="System">
+                                            <param id="0" name="Variable">SelectedTrackID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="459348489312366" type="System">
+                                            <param id="0" name="Layout">Parking Lot</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="116989306393363" type="Audio">
+                                            <param id="0" name="Audio file">639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">SFXVolume</param>
+                                            <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="708699982623181">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="510534991011962" type="Keyboard">
+                            <param id="0" name="Key">27</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="223437785855475" type="System">
+                            <param id="0" name="Layer">&quot;Car Selection&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="404271760861403" type="System">
+                            <param id="0" name="Layer">&quot;Level Selection&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="501089212544587" type="System">
+                            <param id="0" name="Group name">&quot;Level Selection&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="300508410296882" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="145042976394026" type="System">
+                            <param id="0" name="Group name">&quot;Car Selection&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="392061291201481">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="121621691893563" type="Keyboard">
+                            <param id="0" name="Key">13</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="340764797869080">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="297480153606034" type="System">
+                                    <param id="0" name="Variable">SelectedTrackID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="549158378510778" type="System">
+                                    <param id="0" name="Layout">C1 Loop</param>
+                                </action>
+                                <action id="0" name="Play" sid="578551820447257" type="Audio">
+                                    <param id="0" name="Audio file">639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">SFXVolume</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="682269300790342">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="889974822688626" type="System">
+                                    <param id="0" name="Variable">SelectedTrackID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="360909475557473" type="System">
+                                    <param id="0" name="Layout">Test Track</param>
+                                </action>
+                                <action id="0" name="Play" sid="865732194754889" type="Audio">
+                                    <param id="0" name="Audio file">639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">SFXVolume</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="215073758806993">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="297477151592791" type="System">
+                                    <param id="0" name="Variable">SelectedTrackID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="964178541517213" type="System">
+                                    <param id="0" name="Layout">Parking Lot</param>
+                                </action>
+                                <action id="0" name="Play" sid="864991262392794" type="Audio">
+                                    <param id="0" name="Audio file">639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">SFXVolume</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Lock the SelectedTrackID so it cannot go below 0</comment>
+                <event-block sid="919255899782514">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="109043861286818" type="BahnschriftFont">
+                            <param id="0" name="Unique ID">28</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="448841770515373" type="System">
+                            <param id="0" name="Variable">SelectedTrackID</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="183922008613440" type="System">
+                            <param id="0" name="Variable">SelectedTrackID</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Set the text to Locked for ID above 2</comment>
+                <event-block sid="586951736499493">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="482285561493566" type="BahnschriftFont">
+                            <param id="0" name="Unique ID">28</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="935535274879293" type="System">
+                            <param id="0" name="Variable">SelectedTrackID</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="819340508243396" type="System">
+                            <param id="0" name="Variable">SelectedTrack</param>
+                            <param id="1" name="Value">&quot;Locked&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="305630684482824" type="BahnschriftFont">
+                            <param id="0" name="Text">SelectedTrack</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="162628823470260" type="System">
+                            <param id="0" name="Variable">SelectedTrackID</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="929904699504729" title="Set Track Name">
+                    <sub-events>
+                        <comment>Set track name to each corresponding ID</comment>
+                        <event-block sid="743850910694361">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="109171475664958" type="BahnschriftFont">
+                                    <param id="0" name="Unique ID">28</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="552528164137752" type="System">
+                                    <param id="0" name="Variable">SelectedTrackID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="997281525560498" type="System">
+                                    <param id="0" name="Variable">SelectedTrack</param>
+                                    <param id="1" name="Value">&quot;C1 Loop&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="557022347490986" type="BahnschriftFont">
+                                    <param id="0" name="Text">SelectedTrack</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="598567047726985" type="C1LoopThumb">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="167908969871451">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="369833591363187" type="BahnschriftFont">
+                                    <param id="0" name="Unique ID">28</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="170380082164896" type="System">
+                                    <param id="0" name="Variable">SelectedTrackID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="225394162839598" type="System">
+                                    <param id="0" name="Variable">SelectedTrack</param>
+                                    <param id="1" name="Value">&quot;Test Track&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="495254000949386" type="BahnschriftFont">
+                                    <param id="0" name="Text">SelectedTrack</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="604907871559579" type="C1LoopThumb">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="424080991392138">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="164896986931152" type="BahnschriftFont">
+                                    <param id="0" name="Unique ID">28</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="165031227791590" type="System">
+                                    <param id="0" name="Variable">SelectedTrackID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="658140345706621" type="System">
+                                    <param id="0" name="Variable">SelectedTrack</param>
+                                    <param id="1" name="Value">&quot;Daikoku PA&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="618861474667367" type="BahnschriftFont">
+                                    <param id="0" name="Text">SelectedTrack</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="122931153048344" type="C1LoopThumb">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="310625674786166">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="878661135741412" type="System">
+                                    <param id="0" name="Variable">SelectedTrackID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="365532920446897" type="BahnschriftFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Experimental&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="779472736433307" type="BahnschriftFont">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="526818631148405">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="335137919259867" type="System">
+                                    <param id="0" name="Variable">SelectedTrackID</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="782879463518098" type="BahnschriftFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Experimental&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="633852381568552" type="BahnschriftFont">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <variable constant="0" name="ScrollSpeed" sid="292539380050616" static="0" type="number">0</variable>
+        <event-group description="" sid="266747001454299" title="Credits">
+            <sub-events>
+                <event-block sid="416479238006581">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="606620214479145" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="348223248471049" type="VHSGothicFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;content&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="196418226213879" type="VHSGothicFont">
+                            <param id="0" name="Y">LayoutHeight</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="751410591298036">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="570497422259590" type="Touch">
+                            <param id="0" name="Object">BahnschriftFont</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="951188116883871" type="BahnschriftFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Credits&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="762502833158915" type="System">
+                            <param id="0" name="Layout">Credits</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="588692986215274">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="622217806187655" type="Touch">
+                            <param id="0" name="Object">BahnschriftFont</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="547276616843129" type="BahnschriftFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Back&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="829745593461323" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="451151803177440">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="333371799891218" type="VHSGothicFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;content&quot;</param>
+                        </condition>
+                        <condition id="-1" name="Every tick" sid="207685917393173" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="308416229519570" type="VHSGothicFont">
+                            <param id="0" name="Text">&quot;&#x0D;&#x0A;An Indie Game Made by&#x0D;&#x0A;&#x0D;&#x0A;Razanius12 (a.k.a)&#x0D;&#x0A;RAZAN MUHAMMAD IHSAN&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;SFX Attribution&#x0D;&#x0A;&#x0D;&#x0A;468925__malakme__high-text-blip.ogg&#x0D;&#x0A;468927__malakme__medium-text-blip.ogg&#x0D;&#x0A;https://freesound.org/people/malakme/packs/26531/&#x0D;&#x0A;&#x0D;&#x0A;611801__metalfortress__collapse.wav&#x0D;&#x0A;611807__metalfortress__text_click.wav&#x0D;&#x0A;https://freesound.org/people/metalfortress/packs/33727/&#x0D;&#x0A;&#x0D;&#x0A;332058__qubodup__collision.flac&#x0D;&#x0A;https://freesound.org/people/qubodup/sounds/332058/&#x0D;&#x0A;&#x0D;&#x0A;332056__qubodup__fast-collision.flac&#x0D;&#x0A;https://freesound.org/people/qubodup/sounds/332056/&#x0D;&#x0A;&#x0D;&#x0A;774489__tetrisrocker__highway-car-noise.wav&#x0D;&#x0A;https://freesound.org/people/Tetrisrocker/sounds/774489/&#x0D;&#x0A;&#x0D;&#x0A;390786__mhad__engine_idle.wav&#x0D;&#x0A;https://freesound.org/people/mhad/sounds/390786/&#x0D;&#x0A;&#x0D;&#x0A;609825__itinerantmonk108__2018-nissa-rogue-idle.wav&#x0D;&#x0A;https://freesound.org/people/itinerantmonk108/sounds/609825/&#x0D;&#x0A;&#x0D;&#x0A;207384__npeo__gas-station-ambience.wav&#x0D;&#x0A;Gas Station Ambience by Npeo -- &#x0D;&#x0A;https://freesound.org/s/207384/ -- &#x0D;&#x0A;License: Attribution 4.0&#x0D;&#x0A;&#x0D;&#x0A;639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl.wav&#x0D;&#x0A;Engine Start Idle Rev Shut Off (From Outside Hood Closed) on 1990 Volvo 240 DL by j_soundeffects -- &#x0D;&#x0A;https://freesound.org/s/639227/ -- &#x0D;&#x0A;License: Attribution 4.0&#x0D;&#x0A;&#x0D;&#x0A;636502__j_soundeffects__car-horn-from-inside-of-1990-volvo-240-sedan.wav&#x0D;&#x0A;Car Horn From Inside of 1990 Volvo 240 Sedan by j_soundeffects --&#x0D;&#x0A;https://freesound.org/s/636502/ -- &#x0D;&#x0A;License: Attribution 4.0&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;Music&#x0D;&#x0A;&#x0D;&#x0A;&apos;Ghosts on the Overpass&apos; (Remastered)&#x0D;&#x0A;Razanius12&#x0D;&#x0A;https://www.bandlab.com/songs/db544452-87db-ef11-88f6-6045bd3473c0&#x0D;&#x0A;&#x0D;&#x0A;&apos;bRAZCore&apos;&#x0D;&#x0A;Razanius12&#x0D;&#x0A;https://www.bandlab.com/songs/d2ec5377-63da-ef11-88f6-6045bd3473c0&#x0D;&#x0A;&#x0D;&#x0A;&apos;InRazFies&apos;&#x0D;&#x0A;Razanius12&#x0D;&#x0A;https://www.bandlab.com/songs/5ff4974e-2cdb-ef11-88f6-6045bd3473c0&#x0D;&#x0A;&#x0D;&#x0A;&apos;The Other Me&apos;&#x0D;&#x0A;Razanius12&#x0D;&#x0A;https://www.bandlab.com/songs/2c4ece89-e546-ec11-9820-e42aac7a5303&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;Special Thanks to&#x0D;&#x0A;&#x0D;&#x0A;Anyone involved in this project&#x0D;&#x0A;and You&#x0D;&#x0A;&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="721369921117122" type="VHSGothicFont">
+                            <param id="0" name="Y">VHSGothicFont.Y - ScrollSpeed</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="684076832878684">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="991617978464308" type="System">
+                                    <param id="0" name="First value">VHSGothicFont.Y + VHSGothicFont.Height</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="698119508714132" type="VHSGothicFont">
+                                    <param id="0" name="Y">LayoutHeight</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="437935089193489">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="165002834904007" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="884687821471933" type="System">
+                                    <param id="0" name="Variable">ScrollSpeed</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="781980485769917">
+                            <conditions>
+                                <condition id="2" inverted="1" name="Key is down" sid="921133980673379" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="400938003023273" type="System">
+                                    <param id="0" name="Variable">ScrollSpeed</param>
+                                    <param id="1" name="Value">1.3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

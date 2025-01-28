@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Global Event</name>
+    <events>
+        <comment>Global Event</comment>
+        <variable constant="0" name="SFXVolume" sid="436131848945564" static="0" type="number">-14</variable>
+        <variable constant="0" name="MusicVolume" sid="958338634032297" static="0" type="number">-17</variable>
+        <variable constant="0" name="SelectedCarID" sid="658747878612294" static="0" type="number">-1</variable>
+        <variable constant="0" name="SelectedCar" sid="914679513726457" static="0" type="text">null</variable>
+        <variable constant="0" name="SelectedTrackID" sid="572089425666956" static="0" type="number">-1</variable>
+        <variable constant="0" name="PlayerName" sid="594492812765340" static="0" type="text">PlayerOne</variable>
+        <variable constant="0" name="SelectedTrack" sid="368388628417550" static="0" type="text">null</variable>
+        <event-block sid="584887640907663">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="669927571494350" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set character width" sid="458243131487631" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;ij!&quot;</param>
+                    <param id="1" name="Width">19</param>
+                </action>
+                <action id="5" name="Set character width" sid="923774266286976" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;Il&quot;</param>
+                    <param id="1" name="Width">20</param>
+                </action>
+                <action id="5" name="Set character width" sid="235715172911904" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;ft1&quot;</param>
+                    <param id="1" name="Width">21</param>
+                </action>
+                <action id="5" name="Set character width" sid="612111243885805" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;()&quot;</param>
+                    <param id="1" name="Width">22</param>
+                </action>
+                <action id="5" name="Set character width" sid="196294840195865" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;/&quot;</param>
+                    <param id="1" name="Width">23</param>
+                </action>
+                <action id="5" name="Set character width" sid="339881027916404" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;r&quot;</param>
+                    <param id="1" name="Width">24</param>
+                </action>
+                <action id="5" name="Set character width" sid="176085001317949" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;?&quot;</param>
+                    <param id="1" name="Width">25</param>
+                </action>
+                <action id="5" name="Set character width" sid="466419311422010" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;Ty-&quot;</param>
+                    <param id="1" name="Width">26</param>
+                </action>
+                <action id="5" name="Set character width" sid="683624468457105" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;JYcsvxz2679&quot;</param>
+                    <param id="1" name="Width">27</param>
+                </action>
+                <action id="5" name="Set character width" sid="700406070755091" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;Zabdegkopqu035&quot;</param>
+                    <param id="1" name="Width">28</param>
+                </action>
+                <action id="5" name="Set character width" sid="601814281034238" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;FLVXhn48&quot;</param>
+                    <param id="1" name="Width">29</param>
+                </action>
+                <action id="5" name="Set character width" sid="483429237494132" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;CES&quot;</param>
+                    <param id="1" name="Width">30</param>
+                </action>
+                <action id="5" name="Set character width" sid="340428734334527" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;ABGKOP&quot;</param>
+                    <param id="1" name="Width">31</param>
+                </action>
+                <action id="5" name="Set character width" sid="966247169176384" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;DHQRU&quot;</param>
+                    <param id="1" name="Width">32</param>
+                </action>
+                <action id="5" name="Set character width" sid="374080511266122" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;N%&quot;</param>
+                    <param id="1" name="Width">33</param>
+                </action>
+                <action id="5" name="Set character width" sid="295442269476779" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;w&quot;</param>
+                    <param id="1" name="Width">35</param>
+                </action>
+                <action id="5" name="Set character width" sid="847929243546377" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;M&quot;</param>
+                    <param id="1" name="Width">36</param>
+                </action>
+                <action id="5" name="Set character width" sid="404403549259341" type="BahnschriftFont">
+                    <param id="0" name="Character">&quot;Wm&quot;</param>
+                    <param id="1" name="Width">38</param>
+                </action>
+                <action id="5" name="Set character width" sid="908751278324894" type="LCDFont">
+                    <param id="0" name="Character">&quot;MW&quot;</param>
+                    <param id="1" name="Width">38</param>
+                </action>
+                <action id="5" name="Set character width" sid="712358970857487" type="LCDFont">
+                    <param id="0" name="Character">&quot;ABCDEFGHIJKLNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\&amp;()[]|`\\/@°+=*$£€&lt;&gt;&quot; &amp; &quot;&apos;&quot; &amp; (&quot;&quot;)</param>
+                    <param id="1" name="Width">27</param>
+                </action>
+                <action id="5" name="Set character width" sid="285318738735161" type="VHSGothicFont">
+                    <param id="0" name="Character">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\&amp;()[]|`\\/@°+=*$£€&lt;&gt;&quot; &amp; &quot;&apos;&quot; &amp; (&quot;&quot;)</param>
+                    <param id="1" name="Width">31</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="861727894009918">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="717936107134818" type="System">
+                    <param id="0" name="Variable">IsAnimating</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="388537122489165" type="System">
+                    <param id="0" name="Variable">IsAnimating</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="637050456087176" type="Audio">
+                    <param id="0" name="Tag">&quot;sfx-dialogue&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="895256127830083">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="539577986094306" type="System">
+                    <param id="0" name="Variable">IsAnimating</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="100273309644758" type="Audio">
+                    <param id="0" name="Tag">&quot;sfx-dialogue&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="985440810052412" type="Audio">
+                    <param id="0" name="Audio file">468927__malakme__medium-text-blip</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">SFXVolume</param>
+                    <param id="1" name="Tag (optional)">&quot;sfx-dialogue&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="765794895563173">
+            <conditions>
+                <condition id="0" name="On function" sid="502138550131308" type="Function">
+                    <param id="0" name="Name">&quot;tOpacityToOpacity&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="334342492964123" type="BahnschriftFont">
+                    <param id="0" name="Instance variable">tOpacity</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="310378761666218" type="BahnschriftFont">
+                    <param id="0" name="Opacity">BahnschriftFont.tOpacity</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="755302647325793">
+            <conditions>
+                <condition id="0" name="On function" sid="126829910756997" type="Function">
+                    <param id="0" name="Name">&quot;SpawnR32GTR&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>
