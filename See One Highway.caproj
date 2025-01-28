@@ -111,24 +111,6 @@
                 <plugin id="TextBox" />
             </object-type>
         </object-folder>
-        <object-folder name="Maps">
-            <object-type name="C1Loop" sid="473456744554832">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494618108430703" speed="5">
-                        <frame duration="1" hotspotX="0.500541" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\C1 Loop.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="NewBeltLine" sid="886290151517982">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839414882641162" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\New Belt Line.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-        </object-folder>
         <object-folder name="Backgrounds">
             <object-type name="MapBG" sid="613943791479277">
                 <plugin id="Sprite" />
@@ -165,7 +147,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="DaikokuPA" sid="991627141396085">
+            <object-type name="DaikokuPABG" sid="991627141396085">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870820597148651" speed="5">
@@ -209,228 +191,6 @@
             </object-type>
         </object-folder>
         <object-folder name="WorldMap">
-            <object-folder name="C1Loop">
-                <object-type name="a1" sid="199413607043367">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256467696216924" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\1.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="a2" sid="287042304190066">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="684230251859435" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\2.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="b1" sid="555920189965201">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432275729703698" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\3.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="b2" sid="893402499319350">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="831204451870251" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\4.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="b3" sid="903114988202398">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="611829223195956" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\5.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="b4" sid="461893357125700">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581763460116792" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\6.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="b5" sid="483199982113050">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="925977973863799" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\7.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="c1" sid="970885420638824">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="832961178392026" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\c1.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="c2" sid="862739139168295">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="434347104203967" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\c2.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="c3" sid="629305413016817">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="250002730906223" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\c3.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="c4" sid="469846893545356">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604148083859998" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\c4.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="d1" sid="300631677522391">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="801066095033996" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\d1.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="d2" sid="316843253826199">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="947022951101128" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\d2.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="d3" sid="400033382342360">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459042758082020" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\d3.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="d4" sid="863721749419700">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="837035356430895" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\d4.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="e1" sid="201241749989538">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="371751637455723" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\e1.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="e2" sid="894508696095188">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="684542919579868" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\e2.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="e3" sid="298182228881008">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="473689941924619" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\e3.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="e4" sid="365758054937849">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249371350895520" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\e4.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="f1" sid="765720957045942">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954012730959377" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\f1.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="f2" sid="159890829709934">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="735916053204339" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\f2.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="f3" sid="323708610299807">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="843468332139633" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\f3.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="g1" sid="830037481342891">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="687947548919623" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\g1.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="g2" sid="429883798171536">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945946157208105" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\g2.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="g3" sid="116345092058362">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="310476878451140" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\C1Loop\g3.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-            </object-folder>
-            <object-folder name="DaikokuPA">
-                <object-type name="texture" sid="790445981896130">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="877279025961822" speed="0">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\asphalt.png" />
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\1.png" />
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\2.png" />
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\3.png" />
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\4.png" />
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\5.png" />
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\6.png" />
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\7.png" />
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\8.png" />
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\9.png" />
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\10.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-            </object-folder>
             <object-type name="InvisibleWall" sid="521159762457980">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -544,6 +304,56 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353062767013035" speed="5">
                         <frame duration="1" hotspotX="1" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="C1Loop" sid="199413607043367">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="25" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="256467696216924" speed="0">
+                        <frame duration="1" hotspotX="-0" hotspotY="-0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\2.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\2.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\3.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\4.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\5.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\6.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\7.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\8.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\9.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\10.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\11.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\12.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\13.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\14.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\15.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\16.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\17.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\18.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\19.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\20.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\21.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\22.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\23.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\24.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\WorldMap\C1Loop\25.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="DaikokuPA" sid="790445981896130">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="877279025961822" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\asphalt.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\1.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\2.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\3.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\4.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\5.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\6.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\7.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\8.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\9.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\WorldMap\DaikokuPA\10.png" />
                     </animation>
                 </animation-folder>
             </object-type>
