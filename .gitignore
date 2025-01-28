@@ -1,0 +1,2 @@
+## Ignore UI State XML so it doesnt conflicts with users
+.uistate.xml
