@@ -362,7 +362,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
             </instances>
@@ -392,10 +392,10 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <isPlayer>0</isPlayer>
+                        <isPlayer>-1</isPlayer>
                         <MinRPM>0</MinRPM>
-                        <MaxRPM>0</MaxRPM>
-                        <RPM>0</RPM>
+                        <MaxRPM>1</MaxRPM>
+                        <RPM>1</RPM>
                         <CurrentGear>1</CurrentGear>
                         <Gear1MaxSpeed>0</Gear1MaxSpeed>
                         <Gear2MaxSpeed>0</Gear2MaxSpeed>
@@ -475,7 +475,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
             </instances>

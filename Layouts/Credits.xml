@@ -2,7 +2,7 @@
 <c2layout>
     <name>Credits</name>
     <sid>528683711028854</sid>
-    <event-sheet>Menu Event</event-sheet>
+    <event-sheet>Credits</event-sheet>
     <size>
         <width>1280</width>
         <height>720</height>
@@ -79,7 +79,7 @@
                         <y>720</y>
                         <z>0</z>
                         <width>1060</width>
-                        <height>1740</height>
+                        <height>1840</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -149,7 +149,7 @@
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
-                        <character-spacing>-5</character-spacing>
+                        <character-spacing>-15</character-spacing>
                         <line-height>0</line-height>
                     </properties>
                     <instance-variables>

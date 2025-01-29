@@ -423,6 +423,12 @@
                                                     <param id="0" name="Instance variable">isPlayer</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
+                                                <action id="0" name="Play" sid="520637104768287" type="Audio">
+                                                    <param id="0" name="Audio file">RX8 Revs</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">SFXVolume - 18</param>
+                                                    <param id="1" name="Tag (optional)">&quot;player-rx8-revs&quot;</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="263451279036121">
@@ -500,6 +506,12 @@
                                                 <action id="-10" name="Set value" sid="572909581233144" type="Cars">
                                                     <param id="0" name="Instance variable">isPlayer</param>
                                                     <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="965304002455309" type="Audio">
+                                                    <param id="0" name="Audio file">R32 GTR Revs</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">SFXVolume - 12</param>
+                                                    <param id="1" name="Tag (optional)">&quot;player-r32-revs&quot;</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -607,6 +619,12 @@
                                                     <param id="0" name="Group name">&quot;AI Follows Lines&quot;</param>
                                                     <param id="1" name="State">1</param>
                                                 </action>
+                                                <action id="0" name="Play" sid="456249520660975" type="Audio">
+                                                    <param id="0" name="Audio file">R32 GTR Revs</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">SFXVolume - 12</param>
+                                                    <param id="1" name="Tag (optional)">&quot;ai-r32-revs&quot;</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                     </sub-events>
@@ -705,6 +723,12 @@
                                             <param id="0" name="Instance variable">isPlayer</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="0" name="Play" sid="974189429602509" type="Audio">
+                                            <param id="0" name="Audio file">RX8 Revs</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">SFXVolume - 18</param>
+                                            <param id="1" name="Tag (optional)">&quot;player-rx8-revs&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="627878828878100">
@@ -783,6 +807,12 @@
                                             <param id="0" name="Instance variable">isPlayer</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="0" name="Play" sid="429639039966242" type="Audio">
+                                            <param id="0" name="Audio file">R32 GTR Revs</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">SFXVolume - 12</param>
+                                            <param id="1" name="Tag (optional)">&quot;player-r32-revs&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <comment>For AI</comment>
@@ -856,6 +886,12 @@
                                         <action id="-10" name="Set value" sid="275911907343408" type="Cars">
                                             <param id="0" name="Instance variable">isPlayer</param>
                                             <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="805957521177731" type="Audio">
+                                            <param id="0" name="Audio file">R32 GTR Revs</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">SFXVolume - 12</param>
+                                            <param id="1" name="Tag (optional)">&quot;ai-r32-revs&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -964,6 +1000,12 @@
                                         <action id="-10" name="Set value" sid="569367893108314" type="Cars">
                                             <param id="0" name="Instance variable">isPlayer</param>
                                             <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="813229540913793" type="Audio">
+                                            <param id="0" name="Audio file">RX8 Revs</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">SFXVolume - 18</param>
+                                            <param id="1" name="Tag (optional)">&quot;player-rx8-revs&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2099,54 +2141,6 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block any="1" sid="786205240159091">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="401262364268004" type="Cars">
-                                    <param id="0" name="Object">Cars</param>
-                                </condition>
-                                <condition id="1" name="Is overlapping another object" sid="579049676137270" type="Cars">
-                                    <param id="0" name="Object">Cars</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="889203451695992" type="Audio">
-                                    <param id="0" name="Audio file">332056__qubodup__fast-collision</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">SFXVolume - 10</param>
-                                    <param id="1" name="Tag (optional)">&quot;sfx-car-collision&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="993039755268163">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="487616794460495" type="Cars">
-                                    <param id="0" name="Object">InvisibleWall</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="446222906779624" type="Audio">
-                                    <param id="0" name="Audio file">332058__qubodup__collision</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">SFXVolume - 10</param>
-                                    <param id="1" name="Tag (optional)">&quot;sfx-car-collision&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="592396952410620">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="953426216728028" type="Cars">
-                                    <param id="0" name="Object">Cones</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="662482876284705" type="Audio">
-                                    <param id="0" name="Audio file">332058__qubodup__collision</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">SFXVolume - 10</param>
-                                    <param id="1" name="Tag (optional)">&quot;sfx-car-collision&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="126833394483247">
@@ -2161,7 +2155,7 @@
                         <action id="0" name="Play" sid="318957512404917" type="Audio">
                             <param id="0" name="Audio file">636502__j_soundeffects__car-horn-from-inside-of-1990-volvo-240-sedan</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">SFXVolume</param>
+                            <param id="3" name="Volume">SFXVolume - 5</param>
                             <param id="1" name="Tag (optional)">&quot;sfx-car-horn-player&quot;</param>
                         </action>
                         <action id="23" name="Seek to" sid="716471171479427" type="Audio">
@@ -2195,7 +2189,7 @@
                         <action id="0" name="Play" sid="731680991711130" type="Audio">
                             <param id="0" name="Audio file">636502__j_soundeffects__car-horn-from-inside-of-1990-volvo-240-sedan</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">SFXVolume</param>
+                            <param id="3" name="Volume">SFXVolume - 5</param>
                             <param id="1" name="Tag (optional)">&quot;sfx-car-horn-ai&quot;</param>
                         </action>
                         <action id="23" name="Seek to" sid="721164338990495" type="Audio">
@@ -2214,6 +2208,51 @@
                     <actions>
                         <action id="6" name="Stop" sid="582077276025232" type="Audio">
                             <param id="0" name="Tag">&quot;sfx-car-horn-ai&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="786205240159091">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="401262364268004" type="Cars">
+                            <param id="0" name="Object">Cars</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="889203451695992" type="Audio">
+                            <param id="0" name="Audio file">332056__qubodup__fast-collision</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">SFXVolume - 12</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx-car-collision&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="993039755268163">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="487616794460495" type="Cars">
+                            <param id="0" name="Object">InvisibleWall</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="446222906779624" type="Audio">
+                            <param id="0" name="Audio file">332058__qubodup__collision</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">SFXVolume - 20</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx-car-collision&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="592396952410620">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="953426216728028" type="Cars">
+                            <param id="0" name="Object">Cones</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="662482876284705" type="Audio">
+                            <param id="0" name="Audio file">332058__qubodup__collision</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">SFXVolume - 15</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx-car-collision&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2284,28 +2323,78 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <variable constant="0" name="PlayerX" sid="836095885942476" static="0" type="number">0</variable>
-        <variable constant="0" name="PlayerY" sid="343149959708199" static="0" type="number">0</variable>
-        <event-block sid="822147260284190">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="334629458318251" type="System" />
-                <condition id="-7" name="Compare instance variable" sid="830182034217216" type="Cars">
-                    <param id="0" name="Instance variable">isPlayer</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="138127278489434" type="System">
-                    <param id="0" name="Variable">PlayerX</param>
-                    <param id="1" name="Value">Cars.X</param>
-                </action>
-                <action id="-9" name="Set value" sid="628774843560082" type="System">
-                    <param id="0" name="Variable">PlayerY</param>
-                    <param id="1" name="Value">Cars.Y</param>
-                </action>
-            </actions>
-        </event-block>
+        <variable constant="0" name="PlayerX" sid="836095885942476" static="0" type="number">1</variable>
+        <variable constant="0" name="PlayerY" sid="343149959708199" static="0" type="number">1</variable>
+        <event-group description="" sid="470657460481505" title="SFX">
+            <sub-events>
+                <event-block sid="822147260284190">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="334629458318251" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="830182034217216" type="Cars">
+                            <param id="0" name="Instance variable">isPlayer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="138127278489434" type="System">
+                            <param id="0" name="Variable">PlayerX</param>
+                            <param id="1" name="Value">Cars.X</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="628774843560082" type="System">
+                            <param id="0" name="Variable">PlayerY</param>
+                            <param id="1" name="Value">Cars.Y</param>
+                        </action>
+                        <action id="5" name="Set playback rate" sid="691278322691677" type="Audio">
+                            <param id="0" name="Tag">&quot;player-rx8-revs&quot;</param>
+                            <param id="1" name="Playback rate">(Cars.RPM / Cars.MaxRPM) * 1.5</param>
+                        </action>
+                        <action id="5" name="Set playback rate" sid="352012141768774" type="Audio">
+                            <param id="0" name="Tag">&quot;player-r32-revs&quot;</param>
+                            <param id="1" name="Playback rate">(Cars.RPM / Cars.MaxRPM) * 1.4</param>
+                        </action>
+                        <action id="3" name="Set volume" sid="191566353148775" type="Audio">
+                            <param id="0" name="Tag">&quot;player-rx8-revs&quot;</param>
+                            <param id="1" name="dB">(SFXVolume - 3) / (LayerScale(&quot;Map&quot;) * 0.8)</param>
+                        </action>
+                        <action id="3" name="Set volume" sid="991288200624276" type="Audio">
+                            <param id="0" name="Tag">&quot;player-r32-revs&quot;</param>
+                            <param id="1" name="dB">(SFXVolume - 1) / (LayerScale(&quot;Map&quot;) * 0.8)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>The -0.008 is the Attenuation Factor, it controls how sensitive it is to the distance</comment>
+                <comment>A larger negative value (e.g., -0.009) = sharper volume drop-off (more sensitive).</comment>
+                <comment>A smaller negative value (e.g., -0.006) = gentler volume drop-off (less sensitive).</comment>
+                <event-block sid="876701225269668">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="785903934892273" type="Cars">
+                            <param id="0" name="Instance variable">isPlayer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set playback rate" sid="523419817980028" type="Audio">
+                            <param id="0" name="Tag">&quot;ai-rx8-revs&quot;</param>
+                            <param id="1" name="Playback rate">(Cars.RPM / Cars.MaxRPM) * 1.5</param>
+                        </action>
+                        <action id="5" name="Set playback rate" sid="270996648453139" type="Audio">
+                            <param id="0" name="Tag">&quot;ai-r32-revs&quot;</param>
+                            <param id="1" name="Playback rate">(Cars.RPM / Cars.MaxRPM) * 1.4</param>
+                        </action>
+                        <action id="3" name="Set volume" sid="588406468613089" type="Audio">
+                            <param id="0" name="Tag">&quot;ai-rx8-revs&quot;</param>
+                            <param id="1" name="dB">(SFXVolume - 3) + ((distance(Cars.X, Cars.Y, PlayerX, PlayerY) + 700) * -0.008) / (LayerScale(&quot;Map&quot;) * 0.8)</param>
+                        </action>
+                        <action id="3" name="Set volume" sid="841306878756878" type="Audio">
+                            <param id="0" name="Tag">&quot;ai-r32-revs&quot;</param>
+                            <param id="1" name="dB">(SFXVolume - 1) + ((distance(Cars.X, Cars.Y, PlayerX, PlayerY) + 700) * -0.008) / (LayerScale(&quot;Map&quot;) * 0.8)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" inactive="1" sid="348325117528401" title="AI Follows Player">
             <sub-events>
                 <event-block sid="457473850041548">
@@ -2901,6 +2990,18 @@
                             <param id="3" name="Volume">MusicVolume</param>
                             <param id="1" name="Tag (optional)">&quot;bg-music&quot;</param>
                         </action>
+                        <action id="0" name="Play" sid="923672332038123" type="Audio">
+                            <param id="0" name="Audio file">RX8 Revs</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">SFXVolume - 18</param>
+                            <param id="1" name="Tag (optional)">&quot;player-rx8-revs&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="468320203189465" type="Audio">
+                            <param id="0" name="Audio file">R32 GTR Revs</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">SFXVolume - 12</param>
+                            <param id="1" name="Tag (optional)">&quot;ai-r32-revs&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="453060585476744">
@@ -2930,6 +3031,18 @@
                             <param id="3" name="Volume">MusicVolume</param>
                             <param id="1" name="Tag (optional)">&quot;bg-music&quot;</param>
                         </action>
+                        <action id="0" name="Play" sid="853521918338302" type="Audio">
+                            <param id="0" name="Audio file">RX8 Revs</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">SFXVolume - 18</param>
+                            <param id="1" name="Tag (optional)">&quot;player-rx8-revs&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="966458434361788" type="Audio">
+                            <param id="0" name="Audio file">R32 GTR Revs</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">SFXVolume - 12</param>
+                            <param id="1" name="Tag (optional)">&quot;ai-r32-revs&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="811486423675679">
@@ -2958,6 +3071,18 @@
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">MusicVolume</param>
                             <param id="1" name="Tag (optional)">&quot;bg-music&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="769137971670979" type="Audio">
+                            <param id="0" name="Audio file">RX8 Revs</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">SFXVolume - 18</param>
+                            <param id="1" name="Tag (optional)">&quot;player-rx8-revs&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="770738947078376" type="Audio">
+                            <param id="0" name="Audio file">R32 GTR Revs</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">SFXVolume - 12</param>
+                            <param id="1" name="Tag (optional)">&quot;ai-r32-revs&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -7583,7 +7708,7 @@
                                 <condition id="-8" name="Compare two values" sid="975017975901152" type="System">
                                     <param id="0" name="First value">distance(Cars.X, Cars.Y, PlayerX, PlayerY)</param>
                                     <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">2700</param>
+                                    <param id="2" name="Second value">2600</param>
                                 </condition>
                                 <condition id="-4" name="Trigger once while true" sid="569404540106413" type="System" />
                             </conditions>

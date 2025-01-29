@@ -2,7 +2,10 @@
 
 # Construct 2 User Interface
 *.uistate.xml
+**/*.uistate.xml
 
 # Temporary files
 *.capx.backup*
 *.capx.autosave*
+See One Highway.capx.backup1
+See One Highway.capx.autosave

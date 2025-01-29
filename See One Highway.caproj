@@ -625,6 +625,7 @@
         <event-sheet>Menu Event.xml</event-sheet>
         <event-sheet>Car Class.xml</event-sheet>
         <event-sheet>Story Event.xml</event-sheet>
+        <event-sheet>Credits.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="11">
@@ -653,28 +654,36 @@
         </global-instance>
     </global-instances>
     <sounds-folder>
-        <file name="207384__npeo__gas-station-ambience.m4a" />
-        <file name="207384__npeo__gas-station-ambience.ogg" />
-        <file name="332056__qubodup__fast-collision.m4a" />
-        <file name="332056__qubodup__fast-collision.ogg" />
-        <file name="332058__qubodup__collision.m4a" />
-        <file name="332058__qubodup__collision.ogg" />
-        <file name="390786__mhad__engine_idle.m4a" />
-        <file name="390786__mhad__engine_idle.ogg" />
+        <sound-folder name="Cars Engine">
+            <file name="R32 GTR Revs.m4a" />
+            <file name="R32 GTR Revs.ogg" />
+            <file name="RX8 Revs.m4a" />
+            <file name="RX8 Revs.ogg" />
+            <file name="390786__mhad__engine_idle.m4a" />
+            <file name="390786__mhad__engine_idle.ogg" />
+            <file name="609825__itinerantmonk108__2018-nissa-rogue-idle.m4a" />
+            <file name="609825__itinerantmonk108__2018-nissa-rogue-idle.ogg" />
+        </sound-folder>
+        <sound-folder name="Ambience">
+            <file name="207384__npeo__gas-station-ambience.m4a" />
+            <file name="207384__npeo__gas-station-ambience.ogg" />
+            <file name="774489__tetrisrocker__highway-car-noise.m4a" />
+            <file name="774489__tetrisrocker__highway-car-noise.ogg" />
+        </sound-folder>
         <file name="468925__malakme__high-text-blip.ogg" />
         <file name="468927__malakme__medium-text-blip.ogg" />
-        <file name="609825__itinerantmonk108__2018-nissa-rogue-idle.m4a" />
-        <file name="609825__itinerantmonk108__2018-nissa-rogue-idle.ogg" />
         <file name="611801__metalfortress__collapse.m4a" />
         <file name="611801__metalfortress__collapse.ogg" />
         <file name="611807__metalfortress__text_click.m4a" />
         <file name="611807__metalfortress__text_click.ogg" />
-        <file name="774489__tetrisrocker__highway-car-noise.m4a" />
-        <file name="774489__tetrisrocker__highway-car-noise.ogg" />
         <file name="636502__j_soundeffects__car-horn-from-inside-of-1990-volvo-240-sedan.m4a" />
         <file name="636502__j_soundeffects__car-horn-from-inside-of-1990-volvo-240-sedan.ogg" />
         <file name="639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl.m4a" />
         <file name="639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl.ogg" />
+        <file name="332058__qubodup__collision.ogg" />
+        <file name="332058__qubodup__collision.m4a" />
+        <file name="332056__qubodup__fast-collision.ogg" />
+        <file name="332056__qubodup__fast-collision.m4a" />
     </sounds-folder>
     <music-folder>
         <file name="InRazFies.m4a" />
@@ -687,6 +696,8 @@
         <file name="The_Other_Me.ogg" />
         <file name="Ghosts_on_the_Overpass_Remastered.m4a" />
         <file name="Ghosts_on_the_Overpass_Remastered.ogg" />
+        <file name="EVDE.m4a" />
+        <file name="EVDE.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
