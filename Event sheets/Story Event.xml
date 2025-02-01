@@ -10,7 +10,6 @@
         <variable constant="0" name="DisplayedText" sid="953979319196119" static="0" type="text"></variable>
         <variable constant="0" name="CurrentDialogue" sid="103543762874175" static="0" type="text"></variable>
         <variable constant="0" name="CurrentLetterIndex" sid="514369159750597" static="0" type="number">0</variable>
-        <variable constant="0" name="TASpeed" sid="138051840096787" static="0" type="number">0.09</variable>
         <variable constant="0" name="CharName" sid="722930895995721" static="0" type="text"> </variable>
         <event-block sid="159300511193715">
             <conditions>
@@ -18,6 +17,14 @@
             </conditions>
             <actions>
                 <action id="33" name="Stop all" sid="848936367388578" type="Audio" />
+                <action id="-4" name="Set layer visible" sid="874965383435734" type="System">
+                    <param id="0" name="Layer">&quot;Loading&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="513546264190552" type="System">
+                    <param id="0" name="Layer">&quot;Settings&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="926564571989180">
@@ -50,6 +57,24 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="572031155845931">
+            <conditions>
+                <condition id="17" name="On tap object" sid="615893346094412" type="Touch">
+                    <param id="0" name="Object">BahnschriftFont</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="622493609033218" type="BahnschriftFont">
+                    <param id="0" name="Instance variable">Name</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Settings&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="715044787466548" type="System">
+                    <param id="0" name="Layer">&quot;Settings&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="443154675171139" title="Story">
             <sub-events>
                 <event-block sid="267570090634266">
@@ -62,6 +87,56 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <event-block sid="550002719428984">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="919122934206593" type="Touch">
+                                    <param id="0" name="Object">BahnschriftFont</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="530795196718488" type="BahnschriftFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Skip&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="619950727715766" type="System">
+                                    <param id="0" name="Variable">IsAnimating</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="986200947345314" type="System">
+                                    <param id="0" name="Variable">StageProgression</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="580512158227523" type="System">
+                                    <param id="0" name="Variable">StoryProgression</param>
+                                    <param id="1" name="Value">35</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="965731625683502" type="System">
+                                    <param id="0" name="Variable">SelectedTrack</param>
+                                    <param id="1" name="Value">&quot;Daikoku PA&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="154118936877770" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="625909194528405" type="Audio">
+                                    <param id="0" name="Audio file">639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">SFXVolume</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="855864611758448" type="System">
+                                    <param id="0" name="Layer">&quot;Loading&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="673547004639990" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="907115995995846" type="System">
+                                    <param id="0" name="Layout">Parking Lot</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="486988358487423">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="717506554733474" type="System">
@@ -4229,19 +4304,7 @@
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="644441088227135" type="System">
-                            <param id="0" name="Variable">SelectedTrack</param>
-                            <param id="1" name="Value">&quot;Daikoku PA&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="907722893074677" type="System">
-                            <param id="0" name="Variable">SelectedCarID</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="794913427807682" type="System">
-                            <param id="0" name="Layout">Parking Lot</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="953371952827314">
                     <conditions>
@@ -4253,6 +4316,56 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <event-block sid="885653801895240">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="108187550565663" type="Touch">
+                                    <param id="0" name="Object">BahnschriftFont</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="225607684743262" type="BahnschriftFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Skip&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="776810208490041" type="System">
+                                    <param id="0" name="Variable">IsAnimating</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="896591332328709" type="System">
+                                    <param id="0" name="Variable">StageProgression</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="203523433320587" type="System">
+                                    <param id="0" name="Variable">StoryProgression</param>
+                                    <param id="1" name="Value">63</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="316570723940166" type="System">
+                                    <param id="0" name="Variable">SelectedTrack</param>
+                                    <param id="1" name="Value">&quot;C1 Loop&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="759760313095779" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="705116688664195" type="Audio">
+                                    <param id="0" name="Audio file">639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">SFXVolume</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="576926198392310" type="System">
+                                    <param id="0" name="Layer">&quot;Loading&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="234009523247818" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="524168226863222" type="System">
+                                    <param id="0" name="Layout">C1 Loop</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="877838527510916">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="458135113554324" type="System">
@@ -7716,19 +7829,7 @@
                             <param id="2" name="Value">3</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="742465480186811" type="System">
-                            <param id="0" name="Variable">SelectedTrack</param>
-                            <param id="1" name="Value">&quot;C1 Loop&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="813846559122048" type="System">
-                            <param id="0" name="Variable">SelectedCarID</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="973397763773242" type="System">
-                            <param id="0" name="Layout">C1 Loop</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="677116791336853">
                     <conditions>
@@ -7740,6 +7841,56 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <event-block sid="202675178831670">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="960292695737349" type="Touch">
+                                    <param id="0" name="Object">BahnschriftFont</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="170436551495818" type="BahnschriftFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Skip&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="799768174981337" type="System">
+                                    <param id="0" name="Variable">IsAnimating</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="325660454283288" type="System">
+                                    <param id="0" name="Variable">StageProgression</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="344959782869286" type="System">
+                                    <param id="0" name="Variable">StoryProgression</param>
+                                    <param id="1" name="Value">105</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="804375966219320" type="System">
+                                    <param id="0" name="Variable">SelectedTrack</param>
+                                    <param id="1" name="Value">&quot;C1 Loop&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="484253384303553" type="System">
+                                    <param id="0" name="Variable">SelectedCarID</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="754870546984132" type="Audio">
+                                    <param id="0" name="Audio file">639227__j_soundeffects__engine-start-idle-rev-shut-off-from-outside-hood-closed-on-1990-volvo-240-dl</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">SFXVolume</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="452123966591145" type="System">
+                                    <param id="0" name="Layer">&quot;Loading&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="653939436528092" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="455915580466278" type="System">
+                                    <param id="0" name="Layout">C1 Loop</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="346304950830189">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="147084274992560" type="System">
@@ -13012,19 +13163,7 @@
                             <param id="2" name="Value">5</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="845023437733510" type="System">
-                            <param id="0" name="Variable">SelectedTrack</param>
-                            <param id="1" name="Value">&quot;C1 Loop&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="852492985371446" type="System">
-                            <param id="0" name="Variable">SelectedCarID</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="466165538854035" type="System">
-                            <param id="0" name="Layout">C1 Loop</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
             </sub-events>
         </event-group>
@@ -13370,6 +13509,13 @@
                                     <param id="3" name="Volume">SFXVolume</param>
                                     <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
                                 </action>
+                                <action id="-4" name="Set layer visible" sid="288119544196512" type="System">
+                                    <param id="0" name="Layer">&quot;Loading&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="484085470835220" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
                                 <action id="-2" name="Go to layout" sid="330899830434070" type="System">
                                     <param id="0" name="Layout">Parking Lot</param>
                                 </action>
@@ -13409,6 +13555,13 @@
                                     <param id="3" name="Volume">SFXVolume</param>
                                     <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
                                 </action>
+                                <action id="-4" name="Set layer visible" sid="390773907900350" type="System">
+                                    <param id="0" name="Layer">&quot;Loading&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="674697599380766" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
                                 <action id="-2" name="Go to layout" sid="347831185697584" type="System">
                                     <param id="0" name="Layout">C1 Loop</param>
                                 </action>
@@ -13447,6 +13600,13 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">SFXVolume</param>
                                     <param id="1" name="Tag (optional)">&quot;sfx-ui&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="268748018733311" type="System">
+                                    <param id="0" name="Layer">&quot;Loading&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="479161283714745" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="529196251794417" type="System">
                                     <param id="0" name="Layout">C1 Loop</param>

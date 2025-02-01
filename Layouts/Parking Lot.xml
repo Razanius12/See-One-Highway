@@ -1553,8 +1553,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>256</x>
-                        <y>-384</y>
+                        <x>260</x>
+                        <y>-580</y>
                         <z>0</z>
                         <width>682</width>
                         <height>285</height>
@@ -1578,8 +1578,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1024</x>
-                        <y>-384</y>
+                        <x>1020</x>
+                        <y>-580</y>
                         <z>0</z>
                         <width>339</width>
                         <height>392</height>
@@ -1587,7 +1587,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="Cars" uid="393">
@@ -4797,7 +4797,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>640</x>
-                        <y>-384</y>
+                        <y>-580</y>
                         <z>0</z>
                         <width>339</width>
                         <height>392</height>
@@ -4805,7 +4805,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
             </instances>

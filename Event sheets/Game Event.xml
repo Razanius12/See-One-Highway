@@ -118,7 +118,7 @@
                                         <action id="-3" name="Create object" sid="629602392822200" type="System">
                                             <param id="0" name="Object to create">Cars</param>
                                             <param id="1" name="Layer">&quot;AI Cars&quot;</param>
-                                            <param id="2" name="X">3400</param>
+                                            <param id="2" name="X">3260</param>
                                             <param id="3" name="Y">6200</param>
                                         </action>
                                         <action id="-3" name="Create object" sid="725366650855773" type="System">
@@ -169,7 +169,7 @@
                                             <param id="0" name="Scale">0.2</param>
                                         </action>
                                         <action id="-8" name="Set angle" sid="582963762956914" type="Cars">
-                                            <param id="0" name="Angle">300</param>
+                                            <param id="0" name="Angle">0</param>
                                         </action>
                                         <action id="4" name="Set animation" sid="527144405815485" type="Cars">
                                             <param id="0" name="Animation">&quot;R32GTRDarkGrey&quot;</param>
@@ -270,8 +270,8 @@
                                         <action id="-3" name="Create object" sid="519390484955310" type="System">
                                             <param id="0" name="Object to create">Cars</param>
                                             <param id="1" name="Layer">&quot;AI Cars&quot;</param>
-                                            <param id="2" name="X">3120</param>
-                                            <param id="3" name="Y">3720</param>
+                                            <param id="2" name="X">3060</param>
+                                            <param id="3" name="Y">2600</param>
                                         </action>
                                         <action id="-3" name="Create object" sid="114617677233757" type="System">
                                             <param id="0" name="Object to create">AiLights</param>
@@ -352,7 +352,7 @@
                                                 <condition id="-14" name="Compare variable" sid="211906366936953" type="System">
                                                     <param id="0" name="Variable">SelectedCar</param>
                                                     <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">&quot;RX-8&quot;</param>
+                                                    <param id="2" name="Value">&quot;RX-8 (Red)&quot;</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -436,7 +436,7 @@
                                                 <condition id="-14" name="Compare variable" sid="808529360617133" type="System">
                                                     <param id="0" name="Variable">SelectedCar</param>
                                                     <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">&quot;GT-R R32&quot;</param>
+                                                    <param id="2" name="Value">&quot;GT-R R32 (Silver)&quot;</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -508,6 +508,174 @@
                                                     <param id="1" name="Value">1</param>
                                                 </action>
                                                 <action id="0" name="Play" sid="965304002455309" type="Audio">
+                                                    <param id="0" name="Audio file">R32 GTR Revs</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">SFXVolume - 12</param>
+                                                    <param id="1" name="Tag (optional)">&quot;player-r32-revs&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="498802305801918">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="101031850334490" type="System">
+                                                    <param id="0" name="Variable">SelectedCar</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;GT-R R32 (Black)&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="174417117289994" type="System">
+                                                    <param id="0" name="Object to create">Cars</param>
+                                                    <param id="1" name="Layer">&quot;Player Car&quot;</param>
+                                                    <param id="2" name="X">3200</param>
+                                                    <param id="3" name="Y">2048</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="891107999673857" type="System">
+                                                    <param id="0" name="Object to create">PlayerLights</param>
+                                                    <param id="1" name="Layer">&quot;Player Car&quot;</param>
+                                                    <param id="2" name="X">Cars.X + 64</param>
+                                                    <param id="3" name="Y">Cars.Y  - 23</param>
+                                                </action>
+                                                <action behavior="Pin" id="0" name="Pin to object" sid="941672482144998" type="PlayerLights">
+                                                    <param id="0" name="Pin to">Cars</param>
+                                                    <param id="1" name="Mode">0</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="476746027862330" type="PlayerLights">
+                                                    <param id="0" name="Scale">0.2</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="456444081930666" type="PlayerLights">
+                                                    <param id="0" name="Angle">-5</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="570756732634485" type="PlayerLights">
+                                                    <param id="0" name="Opacity">50</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="151415930769331" type="System">
+                                                    <param id="0" name="Object to create">PlayerLights</param>
+                                                    <param id="1" name="Layer">&quot;Player Car&quot;</param>
+                                                    <param id="2" name="X">Cars.X + 64</param>
+                                                    <param id="3" name="Y">Cars.Y  + 23</param>
+                                                </action>
+                                                <action behavior="Pin" id="0" name="Pin to object" sid="553001605893635" type="PlayerLights">
+                                                    <param id="0" name="Pin to">Cars</param>
+                                                    <param id="1" name="Mode">0</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="915321615624552" type="PlayerLights">
+                                                    <param id="0" name="Scale">0.2</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="111649008922545" type="PlayerLights">
+                                                    <param id="0" name="Angle">5</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="344247187950693" type="PlayerLights">
+                                                    <param id="0" name="Opacity">50</param>
+                                                </action>
+                                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="365362373937559" type="Cars">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                                <action behavior="Car" id="8" name="Set enabled" sid="258668242707877" type="Cars">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="600911661901192" type="Cars">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="938088845052768" type="Cars">
+                                                    <param id="0" name="Scale">0.2</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="218321197861669" type="Cars">
+                                                    <param id="0" name="Angle">282</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="517466489252365" type="Cars">
+                                                    <param id="0" name="Animation">&quot;R32GTRDarkGrey&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="979706648858221" type="Cars">
+                                                    <param id="0" name="Instance variable">isPlayer</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="266828348535083" type="Audio">
+                                                    <param id="0" name="Audio file">R32 GTR Revs</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">SFXVolume - 12</param>
+                                                    <param id="1" name="Tag (optional)">&quot;player-r32-revs&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="901832516987363">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="437094042074544" type="System">
+                                                    <param id="0" name="Variable">SelectedCar</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;GT-R R32 (Yellow)&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="493771688942132" type="System">
+                                                    <param id="0" name="Object to create">Cars</param>
+                                                    <param id="1" name="Layer">&quot;Player Car&quot;</param>
+                                                    <param id="2" name="X">3200</param>
+                                                    <param id="3" name="Y">2048</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="592324380212606" type="System">
+                                                    <param id="0" name="Object to create">PlayerLights</param>
+                                                    <param id="1" name="Layer">&quot;Player Car&quot;</param>
+                                                    <param id="2" name="X">Cars.X + 64</param>
+                                                    <param id="3" name="Y">Cars.Y  - 23</param>
+                                                </action>
+                                                <action behavior="Pin" id="0" name="Pin to object" sid="514051929188843" type="PlayerLights">
+                                                    <param id="0" name="Pin to">Cars</param>
+                                                    <param id="1" name="Mode">0</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="419064326859457" type="PlayerLights">
+                                                    <param id="0" name="Scale">0.2</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="944819022111880" type="PlayerLights">
+                                                    <param id="0" name="Angle">-5</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="111239649779079" type="PlayerLights">
+                                                    <param id="0" name="Opacity">50</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="979366870050278" type="System">
+                                                    <param id="0" name="Object to create">PlayerLights</param>
+                                                    <param id="1" name="Layer">&quot;Player Car&quot;</param>
+                                                    <param id="2" name="X">Cars.X + 64</param>
+                                                    <param id="3" name="Y">Cars.Y  + 23</param>
+                                                </action>
+                                                <action behavior="Pin" id="0" name="Pin to object" sid="723447939619319" type="PlayerLights">
+                                                    <param id="0" name="Pin to">Cars</param>
+                                                    <param id="1" name="Mode">0</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="464330628840190" type="PlayerLights">
+                                                    <param id="0" name="Scale">0.2</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="793111476820389" type="PlayerLights">
+                                                    <param id="0" name="Angle">5</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="142618740705795" type="PlayerLights">
+                                                    <param id="0" name="Opacity">50</param>
+                                                </action>
+                                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="599194278859075" type="Cars">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                                <action behavior="Car" id="8" name="Set enabled" sid="141978223354914" type="Cars">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="820340117814731" type="Cars">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="681148558961566" type="Cars">
+                                                    <param id="0" name="Scale">0.2</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="497259779454366" type="Cars">
+                                                    <param id="0" name="Angle">282</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="684877410391627" type="Cars">
+                                                    <param id="0" name="Animation">&quot;R32GTRYellow&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="556731684844088" type="Cars">
+                                                    <param id="0" name="Instance variable">isPlayer</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="423261334617250" type="Audio">
                                                     <param id="0" name="Audio file">R32 GTR Revs</param>
                                                     <param id="2" name="Loop">1</param>
                                                     <param id="3" name="Volume">SFXVolume - 12</param>
@@ -1672,6 +1840,14 @@
                                             <param id="0" name="Variable">IsAnimating</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="637566595478532" type="System">
+                                            <param id="0" name="Variable">StoryProgression</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="340612251941443" type="System">
+                                            <param id="0" name="Variable">StageProgression</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
                                         <action id="-2" name="Go to layout" sid="197127871964229" type="System">
                                             <param id="0" name="Layout">Credits</param>
                                         </action>
@@ -2355,11 +2531,11 @@
                         </action>
                         <action id="3" name="Set volume" sid="191566353148775" type="Audio">
                             <param id="0" name="Tag">&quot;player-rx8-revs&quot;</param>
-                            <param id="1" name="dB">(SFXVolume - 3) / (LayerScale(&quot;Map&quot;) * 0.8)</param>
+                            <param id="1" name="dB">(SFXVolume - 2) / (LayerScale(&quot;Map&quot;) * 0.8)</param>
                         </action>
                         <action id="3" name="Set volume" sid="991288200624276" type="Audio">
                             <param id="0" name="Tag">&quot;player-r32-revs&quot;</param>
-                            <param id="1" name="dB">(SFXVolume - 1) / (LayerScale(&quot;Map&quot;) * 0.8)</param>
+                            <param id="1" name="dB">(SFXVolume - 0) / (LayerScale(&quot;Map&quot;) * 0.8)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2385,11 +2561,11 @@
                         </action>
                         <action id="3" name="Set volume" sid="588406468613089" type="Audio">
                             <param id="0" name="Tag">&quot;ai-rx8-revs&quot;</param>
-                            <param id="1" name="dB">(SFXVolume - 3) + ((distance(Cars.X, Cars.Y, PlayerX, PlayerY) + 700) * -0.008) / (LayerScale(&quot;Map&quot;) * 0.8)</param>
+                            <param id="1" name="dB">(SFXVolume - 2) + ((distance(Cars.X, Cars.Y, PlayerX, PlayerY) + 700) * -0.008) / (LayerScale(&quot;Map&quot;) * 0.8)</param>
                         </action>
                         <action id="3" name="Set volume" sid="841306878756878" type="Audio">
                             <param id="0" name="Tag">&quot;ai-r32-revs&quot;</param>
-                            <param id="1" name="dB">(SFXVolume - 1) + ((distance(Cars.X, Cars.Y, PlayerX, PlayerY) + 700) * -0.008) / (LayerScale(&quot;Map&quot;) * 0.8)</param>
+                            <param id="1" name="dB">(SFXVolume - 0) + ((distance(Cars.X, Cars.Y, PlayerX, PlayerY) + 700) * -0.008) / (LayerScale(&quot;Map&quot;) * 0.8)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -5836,7 +6012,7 @@
                                 <condition id="-8" name="Compare two values" sid="977453546736883" type="System">
                                     <param id="0" name="First value">distance(Cars.X, Cars.Y, PlayerX, PlayerY)</param>
                                     <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">1000</param>
+                                    <param id="2" name="Second value">1200</param>
                                 </condition>
                                 <condition id="-4" name="Trigger once while true" sid="737901663222928" type="System" />
                             </conditions>
@@ -6728,247 +6904,276 @@
                                             <param id="2" name="X">Cars.X</param>
                                             <param id="3" name="Y">Cars.Y</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="723602740198802" type="Cars">
-                                            <param id="0" name="Instance variable">LineCount</param>
+                                        <action id="-10" name="Set value" sid="675935627789576" type="StoryTrigger">
+                                            <param id="0" name="Instance variable">Number</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="262083301381917">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="438681300160434" type="Cars">
-                                    <param id="0" name="Instance variable">isPlayer</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="324826579895450" type="Cars">
-                                    <param id="0" name="Instance variable">StoryTriggerAI</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">-4</param>
-                                </condition>
-                                <condition id="-6" name="Every X seconds" sid="386326840526338" type="System">
-                                    <param id="0" name="Interval (seconds)">TASpeed * 0.5</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="751231058670390" type="System">
-                                    <param id="0" name="Variable">CurrentDialogue</param>
-                                    <param id="1" name="Value">&quot;Ribarii: I think that&apos;s them, quick full throttle ahead&quot;</param>
-                                </action>
-                            </actions>
+                        <event-group description="" sid="351068831525572" title="Disable Repeating Lines 1">
                             <sub-events>
-                                <event-block sid="890973514328684">
+                                <event-block sid="262083301381917">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="382971307378579" type="System">
-                                            <param id="0" name="Variable">IsAnimating</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions />
-                                    <sub-events>
-                                        <event-block sid="403433277011435">
-                                            <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="844468679822251" type="Cars">
-                                                    <param id="0" name="Instance variable">isPlayer</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">0</param>
-                                                </condition>
-                                                <condition id="1" name="Is overlapping another object" sid="301219248202784" type="Cars">
-                                                    <param id="0" name="Object">StoryTrigger</param>
-                                                </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="484042697707555" type="StoryTrigger">
-                                                    <param id="0" name="Instance variable">Number</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">Cars.StoryTriggerAI</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="167049613902806" type="System">
-                                                    <param id="0" name="Variable">IsAnimating</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                                <action id="-9" name="Destroy" sid="402459091169573" type="StoryTrigger" />
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="199590206069200">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="746578303720649" type="System">
-                                            <param id="0" name="Variable">IsAnimating</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="740323781598411" type="System">
-                                            <param id="0" name="Variable">CurrentLetterIndex</param>
-                                            <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">len(CurrentDialogue)</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="572636926347008" type="VHSGothicFont">
-                                            <param id="0" name="Instance variable">Name</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="508878539965181" type="BlackBG">
-                                            <param id="0" name="Instance variable">Name</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="847009782677252" type="System">
-                                            <param id="0" name="Variable">CurrentLetterIndex</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="241730520829233" type="System">
-                                            <param id="0" name="Variable">DisplayedText</param>
-                                            <param id="1" name="Value">mid(CurrentDialogue, 0, CurrentLetterIndex)</param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="242013416926202" type="VHSGothicFont">
-                                            <param id="0" name="Text">DisplayedText</param>
-                                        </action>
-                                        <action id="-16" name="Set opacity" sid="966652176030108" type="VHSGothicFont">
-                                            <param id="0" name="Opacity">100</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="461772257950634" type="BlackBG">
-                                            <param id="0" name="Visibility">1</param>
-                                        </action>
-                                    </actions>
-                                    <sub-events>
-                                        <event-block sid="824144521241489">
-                                            <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="359186267778509" type="Cars">
-                                                    <param id="0" name="Instance variable">isPlayer</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">0</param>
-                                                </condition>
-                                                <condition id="1" name="Is overlapping another object" sid="352484340313588" type="Cars">
-                                                    <param id="0" name="Object">StoryTrigger</param>
-                                                </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="324421247067031" type="StoryTrigger">
-                                                    <param id="0" name="Instance variable">Number</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">-5</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="275953075590906" type="System">
-                                                    <param id="0" name="Variable">IsAnimating</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="493585232133442" type="System">
-                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="269818918966493">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="802050588860317" type="Cars">
+                                        <condition id="-7" name="Compare instance variable" sid="438681300160434" type="Cars">
                                             <param id="0" name="Instance variable">isPlayer</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
-                                        <condition id="1" name="Is overlapping another object" sid="791784668026763" type="Cars">
-                                            <param id="0" name="Object">StoryTrigger</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="830458799294665" type="StoryTrigger">
-                                            <param id="0" name="Instance variable">Number</param>
+                                        <condition id="-7" name="Compare instance variable" sid="324826579895450" type="Cars">
+                                            <param id="0" name="Instance variable">StoryTriggerAI</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">Cars.StoryTriggerAI</param>
+                                            <param id="2" name="Value">-4</param>
                                         </condition>
-                                        <condition id="-14" name="Compare variable" sid="337012738741049" type="System">
-                                            <param id="0" name="Variable">IsAnimating</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="790516203888982" type="System">
-                                            <param id="0" name="Variable">CurrentLetterIndex</param>
-                                            <param id="1" name="Comparison">5</param>
-                                            <param id="2" name="Value">len(CurrentDialogue)</param>
+                                        <condition id="-6" name="Every X seconds" sid="386326840526338" type="System">
+                                            <param id="0" name="Interval (seconds)">TASpeed * 0.5</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="787603620615988" type="System">
-                                            <param id="0" name="Variable">IsAnimating</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-9" name="Set value" sid="751231058670390" type="System">
+                                            <param id="0" name="Variable">CurrentDialogue</param>
+                                            <param id="1" name="Value">&quot;Ribarii: I think that&apos;s them, quick full throttle ahead&quot;</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="890973514328684">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="382971307378579" type="System">
+                                                    <param id="0" name="Variable">IsAnimating</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="403433277011435">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="844468679822251" type="Cars">
+                                                            <param id="0" name="Instance variable">isPlayer</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                        <condition id="1" name="Is overlapping another object" sid="301219248202784" type="Cars">
+                                                            <param id="0" name="Object">StoryTrigger</param>
+                                                        </condition>
+                                                        <condition id="-7" name="Compare instance variable" sid="484042697707555" type="StoryTrigger">
+                                                            <param id="0" name="Instance variable">Number</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">Cars.StoryTriggerAI</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="167049613902806" type="System">
+                                                            <param id="0" name="Variable">IsAnimating</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action id="-9" name="Destroy" sid="402459091169573" type="StoryTrigger" />
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="199590206069200">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="746578303720649" type="System">
+                                                    <param id="0" name="Variable">IsAnimating</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="740323781598411" type="System">
+                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">len(CurrentDialogue)</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="572636926347008" type="VHSGothicFont">
+                                                    <param id="0" name="Instance variable">Name</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="508878539965181" type="BlackBG">
+                                                    <param id="0" name="Instance variable">Name</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="847009782677252" type="System">
+                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="241730520829233" type="System">
+                                                    <param id="0" name="Variable">DisplayedText</param>
+                                                    <param id="1" name="Value">mid(CurrentDialogue, 0, CurrentLetterIndex)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="242013416926202" type="VHSGothicFont">
+                                                    <param id="0" name="Text">DisplayedText</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="966652176030108" type="VHSGothicFont">
+                                                    <param id="0" name="Opacity">100</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="461772257950634" type="BlackBG">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="824144521241489">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="359186267778509" type="Cars">
+                                                            <param id="0" name="Instance variable">isPlayer</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                        <condition id="1" name="Is overlapping another object" sid="352484340313588" type="Cars">
+                                                            <param id="0" name="Object">StoryTrigger</param>
+                                                        </condition>
+                                                        <condition id="-7" name="Compare instance variable" sid="324421247067031" type="StoryTrigger">
+                                                            <param id="0" name="Instance variable">Number</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">-5</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="275953075590906" type="System">
+                                                            <param id="0" name="Variable">IsAnimating</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="493585232133442" type="System">
+                                                            <param id="0" name="Variable">CurrentLetterIndex</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="269818918966493">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="802050588860317" type="Cars">
+                                                    <param id="0" name="Instance variable">isPlayer</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="1" name="Is overlapping another object" sid="791784668026763" type="Cars">
+                                                    <param id="0" name="Object">StoryTrigger</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="830458799294665" type="StoryTrigger">
+                                                    <param id="0" name="Instance variable">Number</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">Cars.StoryTriggerAI</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="337012738741049" type="System">
+                                                    <param id="0" name="Variable">IsAnimating</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="790516203888982" type="System">
+                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">len(CurrentDialogue)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="787603620615988" type="System">
+                                                    <param id="0" name="Variable">IsAnimating</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="313006772761482">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="161585288614409" type="System">
+                                                    <param id="0" name="Variable">IsAnimating</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="261109305880451" type="System">
+                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">len(CurrentDialogue)</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="199505770836119" type="VHSGothicFont">
+                                                    <param id="0" name="Instance variable">Name</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="353990134077573" type="BlackBG">
+                                                    <param id="0" name="Instance variable">Name</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="531600990070698" type="System">
+                                                    <param id="0" name="Variable">IsAnimating</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="802785851743252" type="System">
+                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="977363008058426" type="System">
+                                                    <param id="0" name="Seconds">3</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="849658647106779" type="Cars">
+                                                    <param id="0" name="Instance variable">StoryTriggerAI</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="113831738523641" type="System">
+                                                    <param id="0" name="Group name">&quot;Disable Repeating Lines 1&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
-                                <event-block sid="313006772761482">
+                                <event-block sid="927707129925345">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="161585288614409" type="System">
-                                            <param id="0" name="Variable">IsAnimating</param>
+                                        <condition id="-7" name="Compare instance variable" sid="454593215828242" type="Cars">
+                                            <param id="0" name="Instance variable">isPlayer</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
+                                            <param id="2" name="Value">0</param>
                                         </condition>
-                                        <condition id="-14" name="Compare variable" sid="261109305880451" type="System">
-                                            <param id="0" name="Variable">CurrentLetterIndex</param>
-                                            <param id="1" name="Comparison">5</param>
-                                            <param id="2" name="Value">len(CurrentDialogue)</param>
+                                        <condition id="-8" name="Compare two values" sid="445771842354603" type="System">
+                                            <param id="0" name="First value">distance(Cars.X, Cars.Y, PlayerX, PlayerY)</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">300</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="199505770836119" type="VHSGothicFont">
-                                            <param id="0" name="Instance variable">Name</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="353990134077573" type="BlackBG">
-                                            <param id="0" name="Instance variable">Name</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
-                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="884219628724510" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="531600990070698" type="System">
-                                            <param id="0" name="Variable">IsAnimating</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-3" name="Create object" sid="233898444145674" type="System">
+                                            <param id="0" name="Object to create">StoryTrigger</param>
+                                            <param id="1" name="Layer">&quot;Map&quot;</param>
+                                            <param id="2" name="X">Cars.X</param>
+                                            <param id="3" name="Y">Cars.Y</param>
                                         </action>
-                                        <action id="-16" name="Wait" sid="977363008058426" type="System">
-                                            <param id="0" name="Seconds">3</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="849658647106779" type="Cars">
-                                            <param id="0" name="Instance variable">StoryTriggerAI</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-10" name="Set value" sid="905192571824883" type="StoryTrigger">
+                                            <param id="0" name="Instance variable">Number</param>
+                                            <param id="1" name="Value">-4</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
-                        </event-block>
-                        <event-block sid="927707129925345">
+                        </event-group>
+                        <event-block sid="782958873125927">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="454593215828242" type="Cars">
+                                <condition id="-7" name="Compare instance variable" sid="842646634765634" type="Cars">
                                     <param id="0" name="Instance variable">isPlayer</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="-8" name="Compare two values" sid="445771842354603" type="System">
+                                <condition id="-8" name="Compare two values" sid="281836776522051" type="System">
                                     <param id="0" name="First value">distance(Cars.X, Cars.Y, PlayerX, PlayerY)</param>
                                     <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">300</param>
+                                    <param id="2" name="Second value">400</param>
                                 </condition>
-                                <condition id="-4" name="Trigger once while true" sid="884219628724510" type="System" />
+                                <condition id="-4" name="Trigger once while true" sid="860717872699115" type="System" />
                             </conditions>
                             <actions>
-                                <action id="-3" name="Create object" sid="233898444145674" type="System">
-                                    <param id="0" name="Object to create">StoryTrigger</param>
-                                    <param id="1" name="Layer">&quot;Map&quot;</param>
-                                    <param id="2" name="X">Cars.X</param>
-                                    <param id="3" name="Y">Cars.Y</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="905192571824883" type="StoryTrigger">
-                                    <param id="0" name="Instance variable">Number</param>
-                                    <param id="1" name="Value">-4</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="379274964260321" type="System">
+                                <action id="-12" name="Set group active" sid="356029138179777" type="System">
                                     <param id="0" name="Group name">&quot;AI Follows Player&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
-                                <action id="-12" name="Set group active" sid="816705332250037" type="System">
+                                <action id="-12" name="Set group active" sid="951900496401308" type="System">
                                     <param id="0" name="Group name">&quot;AI Follows Lines&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
@@ -7244,240 +7449,244 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="418861076729575">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="278347957926820" type="Cars">
-                                    <param id="0" name="Instance variable">isPlayer</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="711830678574610" type="Cars">
-                                    <param id="0" name="Instance variable">StoryTriggerAI</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">-6</param>
-                                </condition>
-                                <condition id="-6" name="Every X seconds" sid="400644873931939" type="System">
-                                    <param id="0" name="Interval (seconds)">TASpeed * 0.5</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="713452098019964" type="System">
-                                    <param id="0" name="Variable">CurrentDialogue</param>
-                                    <param id="1" name="Value">&quot;Ribarii: Nice, keep pushing&quot;</param>
-                                </action>
-                            </actions>
+                        <event-group description="" sid="164768120745989" title="Disable Repeating Lines 2">
                             <sub-events>
-                                <event-block sid="634164493886868">
+                                <event-block sid="418861076729575">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="546567175797970" type="System">
-                                            <param id="0" name="Variable">IsAnimating</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions />
-                                    <sub-events>
-                                        <event-block sid="777395261349338">
-                                            <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="193917905077297" type="Cars">
-                                                    <param id="0" name="Instance variable">isPlayer</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">0</param>
-                                                </condition>
-                                                <condition id="1" name="Is overlapping another object" sid="580056410032566" type="Cars">
-                                                    <param id="0" name="Object">StoryTrigger</param>
-                                                </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="536797629434273" type="StoryTrigger">
-                                                    <param id="0" name="Instance variable">Number</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">Cars.StoryTriggerAI</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="583364003721983" type="System">
-                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="927349591729717" type="System">
-                                                    <param id="0" name="Variable">IsAnimating</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                                <action id="-9" name="Destroy" sid="816056443461737" type="StoryTrigger" />
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="746127150453375">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="634984363755097" type="System">
-                                            <param id="0" name="Variable">IsAnimating</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="535032541230261" type="System">
-                                            <param id="0" name="Variable">CurrentLetterIndex</param>
-                                            <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">len(CurrentDialogue)</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="965187397265084" type="VHSGothicFont">
-                                            <param id="0" name="Instance variable">Name</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="982123420846004" type="BlackBG">
-                                            <param id="0" name="Instance variable">Name</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="147508134131760" type="System">
-                                            <param id="0" name="Variable">CurrentLetterIndex</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="440485549030137" type="System">
-                                            <param id="0" name="Variable">DisplayedText</param>
-                                            <param id="1" name="Value">mid(CurrentDialogue, 0, CurrentLetterIndex)</param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="112552424346054" type="VHSGothicFont">
-                                            <param id="0" name="Text">DisplayedText</param>
-                                        </action>
-                                        <action id="-16" name="Set opacity" sid="497024536524811" type="VHSGothicFont">
-                                            <param id="0" name="Opacity">100</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="856518649215692" type="BlackBG">
-                                            <param id="0" name="Visibility">1</param>
-                                        </action>
-                                    </actions>
-                                    <sub-events>
-                                        <event-block sid="606975126709910">
-                                            <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="208878990762566" type="Cars">
-                                                    <param id="0" name="Instance variable">isPlayer</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">0</param>
-                                                </condition>
-                                                <condition id="1" name="Is overlapping another object" sid="278964197909228" type="Cars">
-                                                    <param id="0" name="Object">StoryTrigger</param>
-                                                </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="181339374454457" type="StoryTrigger">
-                                                    <param id="0" name="Instance variable">Number</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">-5</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="203647716339176" type="System">
-                                                    <param id="0" name="Variable">IsAnimating</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="801379659118477" type="System">
-                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="769956768799458">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="689885693553494" type="Cars">
+                                        <condition id="-7" name="Compare instance variable" sid="278347957926820" type="Cars">
                                             <param id="0" name="Instance variable">isPlayer</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
-                                        <condition id="1" name="Is overlapping another object" sid="808090892380713" type="Cars">
-                                            <param id="0" name="Object">StoryTrigger</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="349326135926494" type="StoryTrigger">
-                                            <param id="0" name="Instance variable">Number</param>
+                                        <condition id="-7" name="Compare instance variable" sid="711830678574610" type="Cars">
+                                            <param id="0" name="Instance variable">StoryTriggerAI</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">Cars.StoryTriggerAI</param>
+                                            <param id="2" name="Value">-6</param>
                                         </condition>
-                                        <condition id="-14" name="Compare variable" sid="974617286750679" type="System">
-                                            <param id="0" name="Variable">IsAnimating</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="700196647222351" type="System">
-                                            <param id="0" name="Variable">CurrentLetterIndex</param>
-                                            <param id="1" name="Comparison">5</param>
-                                            <param id="2" name="Value">len(CurrentDialogue)</param>
+                                        <condition id="-6" name="Every X seconds" sid="400644873931939" type="System">
+                                            <param id="0" name="Interval (seconds)">TASpeed * 0.5</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="823944177439492" type="System">
-                                            <param id="0" name="Variable">IsAnimating</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-9" name="Set value" sid="713452098019964" type="System">
+                                            <param id="0" name="Variable">CurrentDialogue</param>
+                                            <param id="1" name="Value">&quot;Ribarii: Nice, keep pushing&quot;</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="634164493886868">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="546567175797970" type="System">
+                                                    <param id="0" name="Variable">IsAnimating</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="777395261349338">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="193917905077297" type="Cars">
+                                                            <param id="0" name="Instance variable">isPlayer</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                        <condition id="1" name="Is overlapping another object" sid="580056410032566" type="Cars">
+                                                            <param id="0" name="Object">StoryTrigger</param>
+                                                        </condition>
+                                                        <condition id="-7" name="Compare instance variable" sid="536797629434273" type="StoryTrigger">
+                                                            <param id="0" name="Instance variable">Number</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">Cars.StoryTriggerAI</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="583364003721983" type="System">
+                                                            <param id="0" name="Variable">CurrentLetterIndex</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="927349591729717" type="System">
+                                                            <param id="0" name="Variable">IsAnimating</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action id="-9" name="Destroy" sid="816056443461737" type="StoryTrigger" />
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="746127150453375">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="634984363755097" type="System">
+                                                    <param id="0" name="Variable">IsAnimating</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="535032541230261" type="System">
+                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">len(CurrentDialogue)</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="965187397265084" type="VHSGothicFont">
+                                                    <param id="0" name="Instance variable">Name</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="982123420846004" type="BlackBG">
+                                                    <param id="0" name="Instance variable">Name</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="147508134131760" type="System">
+                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="440485549030137" type="System">
+                                                    <param id="0" name="Variable">DisplayedText</param>
+                                                    <param id="1" name="Value">mid(CurrentDialogue, 0, CurrentLetterIndex)</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="112552424346054" type="VHSGothicFont">
+                                                    <param id="0" name="Text">DisplayedText</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="497024536524811" type="VHSGothicFont">
+                                                    <param id="0" name="Opacity">100</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="856518649215692" type="BlackBG">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="606975126709910">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="208878990762566" type="Cars">
+                                                            <param id="0" name="Instance variable">isPlayer</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                        <condition id="1" name="Is overlapping another object" sid="278964197909228" type="Cars">
+                                                            <param id="0" name="Object">StoryTrigger</param>
+                                                        </condition>
+                                                        <condition id="-7" name="Compare instance variable" sid="181339374454457" type="StoryTrigger">
+                                                            <param id="0" name="Instance variable">Number</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">-5</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="203647716339176" type="System">
+                                                            <param id="0" name="Variable">IsAnimating</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="801379659118477" type="System">
+                                                            <param id="0" name="Variable">CurrentLetterIndex</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="769956768799458">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="689885693553494" type="Cars">
+                                                    <param id="0" name="Instance variable">isPlayer</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="1" name="Is overlapping another object" sid="808090892380713" type="Cars">
+                                                    <param id="0" name="Object">StoryTrigger</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="349326135926494" type="StoryTrigger">
+                                                    <param id="0" name="Instance variable">Number</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">Cars.StoryTriggerAI</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="974617286750679" type="System">
+                                                    <param id="0" name="Variable">IsAnimating</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="700196647222351" type="System">
+                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">len(CurrentDialogue)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="823944177439492" type="System">
+                                                    <param id="0" name="Variable">IsAnimating</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="865543583140451">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="725832174417452" type="System">
+                                                    <param id="0" name="Variable">IsAnimating</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="184103047590259" type="System">
+                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">len(CurrentDialogue)</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="543171725669996" type="VHSGothicFont">
+                                                    <param id="0" name="Instance variable">Name</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="275278516614864" type="BlackBG">
+                                                    <param id="0" name="Instance variable">Name</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="840072789651279" type="System">
+                                                    <param id="0" name="Variable">IsAnimating</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="338643951563673" type="System">
+                                                    <param id="0" name="Seconds">3</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="968398027218299" type="Cars">
+                                                    <param id="0" name="Instance variable">StoryTriggerAI</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
-                                <event-block sid="865543583140451">
+                                <event-block sid="623788103228751">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="725832174417452" type="System">
-                                            <param id="0" name="Variable">IsAnimating</param>
+                                        <condition id="-7" name="Compare instance variable" sid="993328006778242" type="Cars">
+                                            <param id="0" name="Instance variable">isPlayer</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
+                                            <param id="2" name="Value">0</param>
                                         </condition>
-                                        <condition id="-14" name="Compare variable" sid="184103047590259" type="System">
-                                            <param id="0" name="Variable">CurrentLetterIndex</param>
-                                            <param id="1" name="Comparison">5</param>
-                                            <param id="2" name="Value">len(CurrentDialogue)</param>
+                                        <condition id="-8" name="Compare two values" sid="786547771298062" type="System">
+                                            <param id="0" name="First value">distance(Cars.X, Cars.Y, PlayerX, PlayerY)</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">1200</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="543171725669996" type="VHSGothicFont">
-                                            <param id="0" name="Instance variable">Name</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="275278516614864" type="BlackBG">
-                                            <param id="0" name="Instance variable">Name</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;Bottom Dialogue&quot;</param>
-                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="573209536478048" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="840072789651279" type="System">
-                                            <param id="0" name="Variable">IsAnimating</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-3" name="Create object" sid="935397020165751" type="System">
+                                            <param id="0" name="Object to create">StoryTrigger</param>
+                                            <param id="1" name="Layer">&quot;Map&quot;</param>
+                                            <param id="2" name="X">Cars.X</param>
+                                            <param id="3" name="Y">Cars.Y</param>
                                         </action>
-                                        <action id="-16" name="Wait" sid="338643951563673" type="System">
-                                            <param id="0" name="Seconds">3</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="968398027218299" type="Cars">
-                                            <param id="0" name="Instance variable">StoryTriggerAI</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-10" name="Set value" sid="672402290950898" type="StoryTrigger">
+                                            <param id="0" name="Instance variable">Number</param>
+                                            <param id="1" name="Value">-6</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
-                        </event-block>
-                        <event-block sid="623788103228751">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="993328006778242" type="Cars">
-                                    <param id="0" name="Instance variable">isPlayer</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="786547771298062" type="System">
-                                    <param id="0" name="First value">distance(Cars.X, Cars.Y, PlayerX, PlayerY)</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">1200</param>
-                                </condition>
-                                <condition id="-4" name="Trigger once while true" sid="573209536478048" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="935397020165751" type="System">
-                                    <param id="0" name="Object to create">StoryTrigger</param>
-                                    <param id="1" name="Layer">&quot;Map&quot;</param>
-                                    <param id="2" name="X">Cars.X</param>
-                                    <param id="3" name="Y">Cars.Y</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="672402290950898" type="StoryTrigger">
-                                    <param id="0" name="Instance variable">Number</param>
-                                    <param id="1" name="Value">-6</param>
-                                </action>
-                            </actions>
-                        </event-block>
+                        </event-group>
                         <event-block sid="706418586596516">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="670319973944679" type="Cars">
@@ -7498,6 +7707,10 @@
                                 <action id="-9" name="Set value" sid="465962249601744" type="System">
                                     <param id="0" name="Variable">CurrentDialogue</param>
                                     <param id="1" name="Value">&quot;Ribarii: Awesome, we ran from them and they wont be able to catch us up!&quot;</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="740853756597640" type="System">
+                                    <param id="0" name="Group name">&quot;Disable Repeating Lines 2&quot;</param>
+                                    <param id="1" name="State">0</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -7583,35 +7796,6 @@
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
-                                    <sub-events>
-                                        <event-block sid="862812343552839">
-                                            <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="476033681590837" type="Cars">
-                                                    <param id="0" name="Instance variable">isPlayer</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">0</param>
-                                                </condition>
-                                                <condition id="1" name="Is overlapping another object" sid="924478397685708" type="Cars">
-                                                    <param id="0" name="Object">StoryTrigger</param>
-                                                </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="157079885352470" type="StoryTrigger">
-                                                    <param id="0" name="Instance variable">Number</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">-6</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="861461212332217" type="System">
-                                                    <param id="0" name="Variable">IsAnimating</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="663442622973865" type="System">
-                                                    <param id="0" name="Variable">CurrentLetterIndex</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
                                 </event-block>
                                 <event-block sid="556677133093665">
                                     <conditions>
@@ -7708,7 +7892,7 @@
                                 <condition id="-8" name="Compare two values" sid="975017975901152" type="System">
                                     <param id="0" name="First value">distance(Cars.X, Cars.Y, PlayerX, PlayerY)</param>
                                     <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">2600</param>
+                                    <param id="2" name="Second value">2000</param>
                                 </condition>
                                 <condition id="-4" name="Trigger once while true" sid="569404540106413" type="System" />
                             </conditions>
@@ -7722,6 +7906,53 @@
                                 <action id="-10" name="Set value" sid="827140249923843" type="StoryTrigger">
                                     <param id="0" name="Instance variable">Number</param>
                                     <param id="1" name="Value">-7</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="702885725335192">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="556766384628516" type="Cars">
+                                    <param id="0" name="Instance variable">isPlayer</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="988124828663691" type="System">
+                                    <param id="0" name="First value">distance(Cars.X, Cars.Y, PlayerX, PlayerY)</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">2300</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="995069873435549" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="787985315851086" type="System">
+                                    <param id="0" name="Variable">IsAnimating</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="834818315373203" type="Cars" />
+                                <action id="-10" name="Add to" sid="671650315533339" type="System">
+                                    <param id="0" name="Variable">StageProgression</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="204384328743764" type="System">
+                                    <param id="0" name="Variable">StoryProgression</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="984640729166139" type="System">
+                                    <param id="0" name="Group name">&quot;Popup&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="170078222603962" type="System">
+                                    <param id="0" name="Variable">DisplayedText</param>
+                                    <param id="1" name="Value">CurrentDialogue</param>
+                                </action>
+                                <action id="0" name="Set text" sid="113178626684135" type="VHSGothicFont">
+                                    <param id="0" name="Text">DisplayedText</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="337530712522394" type="VHSGothicFont">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="212323347942891" type="BlackBG">
+                                    <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
                         </event-block>

@@ -11,6 +11,7 @@
         <variable constant="0" name="SelectedTrackID" sid="572089425666956" static="0" type="number">-1</variable>
         <variable constant="0" name="PlayerName" sid="594492812765340" static="0" type="text">PlayerOne</variable>
         <variable constant="0" name="SelectedTrack" sid="368388628417550" static="0" type="text">null</variable>
+        <variable constant="0" name="TASpeed" sid="138051840096787" static="0" type="number">0.09</variable>
         <event-block sid="584887640907663">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="669927571494350" type="System" />
@@ -157,13 +158,200 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="755302647325793">
+        <event-block sid="380454438252190">
             <conditions>
-                <condition id="0" name="On function" sid="126829910756997" type="Function">
-                    <param id="0" name="Name">&quot;SpawnR32GTR&quot;</param>
+                <condition id="-9" name="Layer is visible" sid="478084303650117" type="System">
+                    <param id="0" name="Layer">&quot;Settings&quot;</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-12" name="Set group active" sid="601495382917632" type="System">
+                    <param id="0" name="Group name">&quot;Settings&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="566944577433869">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="646138264837536" type="SliderBar">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Music&quot;</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="135883341450179" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set minimum" sid="221326099205124" type="SliderBar">
+                            <param id="0" name="Minimum">-60</param>
+                        </action>
+                        <action id="4" name="Set maximum" sid="128569926795669" type="SliderBar">
+                            <param id="0" name="Maximum">-3</param>
+                        </action>
+                        <action id="6" name="Set step" sid="647555623374709" type="SliderBar">
+                            <param id="0" name="Step">3</param>
+                        </action>
+                        <action id="3" name="Set value" sid="860601843259640" type="SliderBar">
+                            <param id="0" name="Value">MusicVolume</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="339533268525345">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="350910762729446" type="SliderBar">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;SFX&quot;</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="424488552565749" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set minimum" sid="901040412943135" type="SliderBar">
+                            <param id="0" name="Minimum">-60</param>
+                        </action>
+                        <action id="4" name="Set maximum" sid="865536645377128" type="SliderBar">
+                            <param id="0" name="Maximum">0</param>
+                        </action>
+                        <action id="6" name="Set step" sid="359982930496499" type="SliderBar">
+                            <param id="0" name="Step">1</param>
+                        </action>
+                        <action id="3" name="Set value" sid="470302907063033" type="SliderBar">
+                            <param id="0" name="Value">SFXVolume</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="332439899508665">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="435112964263911" type="SliderBar">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;TASpeed&quot;</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="133343761295317" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set minimum" sid="356115352162592" type="SliderBar">
+                            <param id="0" name="Minimum">0.01</param>
+                        </action>
+                        <action id="4" name="Set maximum" sid="909572065967514" type="SliderBar">
+                            <param id="0" name="Maximum">0.15</param>
+                        </action>
+                        <action id="6" name="Set step" sid="657038575389904" type="SliderBar">
+                            <param id="0" name="Step">0.01</param>
+                        </action>
+                        <action id="3" name="Set value" sid="181154611061089" type="SliderBar">
+                            <param id="0" name="Value">TASpeed</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
+        <event-block sid="472227816464854">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="102546515321204" type="System">
+                    <param id="0" name="Layer">&quot;Settings&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="437093327727699" type="System">
+                    <param id="0" name="Group name">&quot;Settings&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="919063478343136" title="Settings">
+            <sub-events>
+                <event-block sid="504026669104034">
+                    <conditions>
+                        <condition id="2" name="On changed" sid="446306174663682" type="SliderBar" />
+                        <condition id="-7" name="Compare instance variable" sid="115312865017202" type="SliderBar">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="958587342304686" type="System">
+                            <param id="0" name="Variable">MusicVolume</param>
+                            <param id="1" name="Value">SliderBar.Value</param>
+                        </action>
+                        <action id="3" name="Set volume" sid="165167677744625" type="Audio">
+                            <param id="0" name="Tag">&quot;bg-music&quot;</param>
+                            <param id="1" name="dB">MusicVolume</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="696744036729912">
+                    <conditions>
+                        <condition id="2" name="On changed" sid="740969017546109" type="SliderBar" />
+                        <condition id="-7" name="Compare instance variable" sid="216674107353299" type="SliderBar">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;SFX&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="304177059653799" type="System">
+                            <param id="0" name="Variable">SFXVolume</param>
+                            <param id="1" name="Value">SliderBar.Value</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="355784980708532">
+                    <conditions>
+                        <condition id="2" name="On changed" sid="609837353097704" type="SliderBar" />
+                        <condition id="-7" name="Compare instance variable" sid="414185896160684" type="SliderBar">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;TASpeed&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="601058821593776" type="System">
+                            <param id="0" name="Variable">TASpeed</param>
+                            <param id="1" name="Value">SliderBar.Value</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="906749234170175">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="942023547432901" type="Touch">
+                            <param id="0" name="Object">BahnschriftFont</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="418053182390005" type="BahnschriftFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Close Settings&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="261052726556083" type="System">
+                            <param id="0" name="Layer">&quot;Settings&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="445996931149678">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="306611435856616" type="Touch">
+                            <param id="0" name="Object">BahnschriftFont</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="378976886912285" type="BahnschriftFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Back to Menu&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="532736448432128" type="System">
+                            <param id="0" name="Layer">&quot;Settings&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="736183522059730" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

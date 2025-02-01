@@ -9,7 +9,7 @@
     </size>
     <margins>
         <horizontal>500</horizontal>
-        <vertical>2000</vertical>
+        <vertical>2200</vertical>
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
@@ -79,7 +79,7 @@
                         <y>720</y>
                         <z>0</z>
                         <width>1060</width>
-                        <height>1840</height>
+                        <height>2180</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0</hotspotY>
