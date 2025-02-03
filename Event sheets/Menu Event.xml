@@ -84,6 +84,10 @@
                         <action id="9" name="Set scale" sid="163719633515015" type="Logo">
                             <param id="0" name="Scale">0.5</param>
                         </action>
+                        <action id="-9" name="Set value" sid="482347755566348" type="System">
+                            <param id="0" name="Variable">IsAnimating</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                         <action id="33" name="Stop all" sid="689258238718612" type="Audio" />
                         <action id="0" name="Play" sid="939532823291479" type="Audio">
                             <param id="0" name="Audio file">InRazFies</param>
@@ -511,46 +515,46 @@
                         </action>
                     </actions>
                 </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" inactive="1" sid="944258387915850" title="Exit">
-            <sub-events>
-                <event-block sid="955090867749359">
-                    <conditions>
-                        <condition id="17" name="On tap object" sid="184494130924985" type="Touch">
-                            <param id="0" name="Object">BahnschriftFont</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="882025142505849" type="BahnschriftFont">
-                            <param id="0" name="Instance variable">Name</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;Exit Yes&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="1" name="Close" sid="544011438742977" type="Browser" />
-                        <action id="17" name="Execute Javascript" sid="841461180971298" type="Browser">
-                            <param id="0" name="Javascript">&quot; process.exit(1); global.gc(); &quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="853095400293393">
-                    <conditions>
-                        <condition id="17" name="On tap object" sid="948283603194736" type="Touch">
-                            <param id="0" name="Object">BahnschriftFont</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="345722985777251" type="BahnschriftFont">
-                            <param id="0" name="Instance variable">Name</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;Exit No&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-4" name="Set layer visible" sid="630544693804654" type="System">
-                            <param id="0" name="Layer">&quot;Exit&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                    </actions>
-                </event-block>
+                <event-group description="" inactive="1" sid="944258387915850" title="Exit">
+                    <sub-events>
+                        <event-block sid="955090867749359">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="184494130924985" type="Touch">
+                                    <param id="0" name="Object">BahnschriftFont</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="882025142505849" type="BahnschriftFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Exit Yes&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Close" sid="544011438742977" type="Browser" />
+                                <action id="17" name="Execute Javascript" sid="841461180971298" type="Browser">
+                                    <param id="0" name="Javascript">&quot; process.exit(1); global.gc(); &quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="853095400293393">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="948283603194736" type="Touch">
+                                    <param id="0" name="Object">BahnschriftFont</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="345722985777251" type="BahnschriftFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Exit No&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="630544693804654" type="System">
+                                    <param id="0" name="Layer">&quot;Exit&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
         <event-group description="" inactive="1" sid="992418666756713" title="Car Selection">
@@ -1224,8 +1228,8 @@
                                         <action id="-16" name="Wait" sid="531218324117237" type="System">
                                             <param id="0" name="Seconds">0.1</param>
                                         </action>
-                                        <action id="-2" name="Go to layout" sid="394111741075153" type="System">
-                                            <param id="0" name="Layout">Test Track</param>
+                                        <action id="-2" name="Go to layout" sid="459348489312366" type="System">
+                                            <param id="0" name="Layout">Parking Lot</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1251,8 +1255,8 @@
                                         <action id="-16" name="Wait" sid="635807082093844" type="System">
                                             <param id="0" name="Seconds">0.1</param>
                                         </action>
-                                        <action id="-2" name="Go to layout" sid="459348489312366" type="System">
-                                            <param id="0" name="Layout">Parking Lot</param>
+                                        <action id="-2" name="Go to layout" sid="394111741075153" type="System">
+                                            <param id="0" name="Layout">Test Track</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1345,8 +1349,8 @@
                                 <action id="-16" name="Wait" sid="348767678474289" type="System">
                                     <param id="0" name="Seconds">0.1</param>
                                 </action>
-                                <action id="-2" name="Go to layout" sid="360909475557473" type="System">
-                                    <param id="0" name="Layout">Test Track</param>
+                                <action id="-2" name="Go to layout" sid="964178541517213" type="System">
+                                    <param id="0" name="Layout">Parking Lot</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1372,8 +1376,8 @@
                                 <action id="-16" name="Wait" sid="544111537452658" type="System">
                                     <param id="0" name="Seconds">0.1</param>
                                 </action>
-                                <action id="-2" name="Go to layout" sid="964178541517213" type="System">
-                                    <param id="0" name="Layout">Parking Lot</param>
+                                <action id="-2" name="Go to layout" sid="360909475557473" type="System">
+                                    <param id="0" name="Layout">Test Track</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1446,8 +1450,12 @@
                                 <action id="0" name="Set text" sid="557022347490986" type="BahnschriftFont">
                                     <param id="0" name="Text">SelectedTrack</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="598567047726985" type="C1LoopThumb">
+                                <action id="-15" name="Set visible" sid="598567047726985" type="TrackThumbnails">
                                     <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="525656057421295" type="TrackThumbnails">
+                                    <param id="0" name="Animation">&quot;C1Loop&quot;</param>
+                                    <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1463,15 +1471,19 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" sid="225394162839598" type="System">
+                                <action id="-9" name="Set value" sid="658140345706621" type="System">
                                     <param id="0" name="Variable">SelectedTrack</param>
-                                    <param id="1" name="Value">&quot;Test Track&quot;</param>
+                                    <param id="1" name="Value">&quot;Daikoku PA&quot;</param>
                                 </action>
                                 <action id="0" name="Set text" sid="495254000949386" type="BahnschriftFont">
                                     <param id="0" name="Text">SelectedTrack</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="604907871559579" type="C1LoopThumb">
-                                    <param id="0" name="Visibility">0</param>
+                                <action id="-15" name="Set visible" sid="604907871559579" type="TrackThumbnails">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="329673003369826" type="TrackThumbnails">
+                                    <param id="0" name="Animation">&quot;DaikokuPA&quot;</param>
+                                    <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1487,14 +1499,14 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" sid="658140345706621" type="System">
+                                <action id="-9" name="Set value" sid="225394162839598" type="System">
                                     <param id="0" name="Variable">SelectedTrack</param>
-                                    <param id="1" name="Value">&quot;Daikoku PA&quot;</param>
+                                    <param id="1" name="Value">&quot;Test Track&quot;</param>
                                 </action>
                                 <action id="0" name="Set text" sid="618861474667367" type="BahnschriftFont">
                                     <param id="0" name="Text">SelectedTrack</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="122931153048344" type="C1LoopThumb">
+                                <action id="-15" name="Set visible" sid="122931153048344" type="TrackThumbnails">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>

@@ -111,6 +111,17 @@
             <object-type name="PlayerNameInput" sid="913691185721225">
                 <plugin id="TextBox" />
             </object-type>
+            <object-type name="TrackThumbnails" sid="568059707794073">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="C1Loop" pingpong="0" repeatcount="1" repeatto="0" sid="300790108294922" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\C1 Loop Thumbnail.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="DaikokuPA" pingpong="0" repeatcount="1" repeatto="0" sid="830300140290305" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\Daikoku PA Thumbnail.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Backgrounds">
             <object-type name="MapBG" sid="613943791479277">
@@ -133,7 +144,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="461448531774997" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\Garage BG.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -152,7 +163,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870820597148651" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\Daikoku PA BG.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -160,33 +171,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="946943150597274" speed="5">
-                        <frame duration="1" hotspotX="0.500261" hotspotY="0.500463" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-        </object-folder>
-        <object-folder name="Thumbnails">
-            <object-type name="C1LoopThumb" sid="568059707794073">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300790108294922" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="GTR_R32Thumb" sid="239713055512075">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="915961335982456" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.500935" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\GT-R R32.jpg" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="RX8Thumb" sid="642720652625600">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="857684668620153" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\RX-8.jpg" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Razanius12\School Work\SMKS IGASAR PINDAD\Game Development\3rd Project\Assets\img\C1 Loop BG.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -212,14 +197,6 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="834531985295160" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="placeholder1" sid="457445663579822">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538910376073578" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>

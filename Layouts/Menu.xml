@@ -375,8 +375,8 @@
                         <x>640</x>
                         <y>360</y>
                         <z>0</z>
-                        <width>1400</width>
-                        <height>732</height>
+                        <width>1280</width>
+                        <height>720</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -665,8 +665,8 @@
                         <x>640</x>
                         <y>360</y>
                         <z>0</z>
-                        <width>1400</width>
-                        <height>732</height>
+                        <width>1280</width>
+                        <height>720</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -854,7 +854,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="C1LoopThumb" uid="29">
+                <instance type="TrackThumbnails" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

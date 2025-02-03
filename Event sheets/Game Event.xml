@@ -817,10 +817,10 @@
                                 <comment>For Player</comment>
                                 <event-block sid="145398216820448">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="990141829147321" type="System">
-                                            <param id="0" name="Variable">SelectedCarID</param>
+                                        <condition id="-14" name="Compare variable" sid="818746247415376" type="System">
+                                            <param id="0" name="Variable">SelectedCar</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
+                                            <param id="2" name="Value">&quot;RX-8 (Red)&quot;</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -901,10 +901,10 @@
                                 </event-block>
                                 <event-block sid="627878828878100">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="142937447744830" type="System">
-                                            <param id="0" name="Variable">SelectedCarID</param>
+                                        <condition id="-14" name="Compare variable" sid="991895476130786" type="System">
+                                            <param id="0" name="Variable">SelectedCar</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
+                                            <param id="2" name="Value">&quot;GT-R R32 (Silver)&quot;</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1063,12 +1063,17 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="118268849540782">
+                                <event-block any="1" sid="118268849540782">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="148610262581086" type="System">
-                                            <param id="0" name="Variable">SelectedCarID</param>
+                                        <condition id="-14" name="Compare variable" sid="218296064433125" type="System">
+                                            <param id="0" name="Variable">SelectedCar</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">-1</param>
+                                            <param id="2" name="Value">&quot;GT-R R32 (Yellow)&quot;</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="245574239924295" type="System">
+                                            <param id="0" name="Variable">SelectedCar</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;GT-R R32 (Black)&quot;</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1093,9 +1098,14 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="310097270902106">
+                                <event-block any="1" sid="310097270902106">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="477990397640336" type="System">
+                                            <param id="0" name="Variable">StageProgression</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="879999719783539" type="System">
                                             <param id="0" name="Variable">SelectedCarID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
@@ -1581,20 +1591,6 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="690520182984499">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="679130346222217" type="BahnschriftFont">
-                                    <param id="0" name="Instance variable">Name</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;FPS&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="101311280056481" type="BahnschriftFont">
-                                    <param id="0" name="Text">fps &amp; &quot; FPS&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="880647035682278">
@@ -1604,7 +1600,6 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
-                        <condition id="-1" name="Every tick" sid="414767187053311" type="System" />
                         <condition id="-7" name="Compare instance variable" sid="194424371292350" type="BahnschriftFont">
                             <param id="0" name="Instance variable">Name</param>
                             <param id="1" name="Comparison">0</param>
@@ -1631,6 +1626,20 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="302782394919323" type="System">
                             <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="690520182984499">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="679130346222217" type="BahnschriftFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;FPS&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="101311280056481" type="BahnschriftFont">
+                            <param id="0" name="Text">fps &amp; &quot; FPS&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -3157,6 +3166,11 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">35</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="903482277380382" type="BahnschriftFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Objectives&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="33" name="Stop all" sid="185682837849086" type="Audio" />
@@ -3178,6 +3192,9 @@
                             <param id="3" name="Volume">SFXVolume - 12</param>
                             <param id="1" name="Tag (optional)">&quot;ai-r32-revs&quot;</param>
                         </action>
+                        <action id="0" name="Set text" sid="306418660462309" type="BahnschriftFont">
+                            <param id="0" name="Text">&quot;! Find a parking spot&#x0D;&#x0A;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="453060585476744">
@@ -3197,6 +3214,11 @@
                             <param id="0" name="Variable">StoryProgression</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">63</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="807492295507994" type="BahnschriftFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Objectives&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -3219,6 +3241,9 @@
                             <param id="3" name="Volume">SFXVolume - 12</param>
                             <param id="1" name="Tag (optional)">&quot;ai-r32-revs&quot;</param>
                         </action>
+                        <action id="0" name="Set text" sid="198879047414387" type="BahnschriftFont">
+                            <param id="0" name="Text">&quot;! Make them stop&#x0D;&#x0A;! Keep the distances under 1200 m&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="811486423675679">
@@ -3238,6 +3263,11 @@
                             <param id="0" name="Variable">StoryProgression</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">105</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="124592822383532" type="BahnschriftFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Objectives&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -3259,6 +3289,9 @@
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">SFXVolume - 12</param>
                             <param id="1" name="Tag (optional)">&quot;ai-r32-revs&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="864696443437353" type="BahnschriftFont">
+                            <param id="0" name="Text">&quot;! Lose them away&#x0D;&#x0A;! Make the distances above 2300 m&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -3868,6 +3901,11 @@
                                 <condition id="-6" name="Every X seconds" sid="677638672305925" type="System">
                                     <param id="0" name="Interval (seconds)">TASpeed * 0.5</param>
                                 </condition>
+                                <condition id="-7" name="Compare instance variable" sid="286909192982382" type="BahnschriftFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Objectives&quot;</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-9" name="Set value" sid="537728207085990" type="System">
@@ -3881,6 +3919,9 @@
                                     <param id="0" name="&apos;On&apos; time">0.3</param>
                                     <param id="1" name="&apos;Off&apos; time">0.3</param>
                                     <param id="2" name="Duration">Infinity</param>
+                                </action>
+                                <action id="0" name="Set text" sid="819366737320199" type="BahnschriftFont">
+                                    <param id="0" name="Text">&quot;! Find a parking spot&#x0D;&#x0A;! Park the car&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>

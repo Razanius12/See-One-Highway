@@ -5,7 +5,7 @@
     <events>
         <comment>Global Event</comment>
         <variable constant="0" name="SFXVolume" sid="436131848945564" static="0" type="number">-14</variable>
-        <variable constant="0" name="MusicVolume" sid="958338634032297" static="0" type="number">-16</variable>
+        <variable constant="0" name="MusicVolume" sid="958338634032297" static="0" type="number">-17</variable>
         <variable constant="0" name="SelectedCarID" sid="658747878612294" static="0" type="number">-1</variable>
         <variable constant="0" name="SelectedCar" sid="914679513726457" static="0" type="text">null</variable>
         <variable constant="0" name="SelectedTrackID" sid="572089425666956" static="0" type="number">-1</variable>
