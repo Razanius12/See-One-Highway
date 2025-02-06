@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Credits</name>
     <events>
+        <include>Global Event</include>
         <variable constant="0" name="ScrollSpeed" sid="417529683027061" static="0" type="number">0</variable>
         <event-group description="" sid="483798648628492" title="Credits">
             <sub-events>
